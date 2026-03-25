@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8 items-center">
             <Link 
               to="/about" 
-              className={`text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#C69C2D]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+              className={`text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#0056B3]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
             >
               Tentang Kami
             </Link>
@@ -92,7 +92,7 @@ export default function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button 
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#C69C2D]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#0056B3]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
               >
                 Paket Umroh
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -112,10 +112,10 @@ export default function Navbar() {
                         key={sublink.name}
                         to={sublink.href}
                         onClick={() => setIsDropdownOpen(false)}
-                        className="flex items-center justify-between px-5 py-3 text-sm font-medium text-slate-700 hover:bg-gray-50 hover:text-[#C69C2D] transition-colors group"
+                        className="flex items-center justify-between px-5 py-3 text-sm font-medium text-slate-700 hover:bg-gray-50 hover:text-[#0056B3] transition-colors group"
                       >
                         {sublink.name}
-                        <span className="flex items-center text-xs text-gray-400 group-hover:text-[#C69C2D] transition-colors">
+                        <span className="flex items-center text-xs text-gray-400 group-hover:text-[#0056B3] transition-colors">
                           Selengkapnya <ArrowRight className="w-3 h-3 ml-1" />
                         </span>
                       </Link>
@@ -127,14 +127,14 @@ export default function Navbar() {
 
             <Link 
               to="/blog" 
-              className={`text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#C69C2D]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+              className={`text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#0056B3]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
             >
               Blog
             </Link>
 
             <Link 
               to="/contact" 
-              className={`px-5 py-2 rounded-full font-bold text-sm transition-colors ${isScrolled || location.pathname !== '/' ? 'bg-[#C69C2D] text-white hover:bg-[#A88222]' : 'bg-white text-[#1E293B] hover:bg-gray-100'}`}
+              className={`px-5 py-2 rounded-full font-bold text-sm transition-colors ${isScrolled || location.pathname !== '/' ? 'bg-[#0056B3] text-white hover:bg-[#004494]' : 'bg-white text-[#003366] hover:bg-gray-100'}`}
             >
               Hubungi Kami
             </Link>
@@ -165,7 +165,7 @@ export default function Navbar() {
               <Link
                 to="/about"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-gray-50 hover:text-[#C69C2D] rounded-md"
+                className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-gray-50 hover:text-[#0056B3] rounded-md"
               >
                 Tentang Kami
               </Link>
@@ -178,7 +178,7 @@ export default function Navbar() {
                       key={sublink.name}
                       to={sublink.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center justify-between py-2 text-sm font-medium text-gray-600 hover:text-[#C69C2D]"
+                      className="flex items-center justify-between py-2 text-sm font-medium text-gray-600 hover:text-[#0056B3]"
                     >
                       {sublink.name}
                       <ArrowRight className="w-4 h-4" />
@@ -190,7 +190,7 @@ export default function Navbar() {
               <Link
                 to="/blog"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-gray-50 hover:text-[#C69C2D] rounded-md"
+                className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-gray-50 hover:text-[#0056B3] rounded-md"
               >
                 Blog
               </Link>
@@ -198,7 +198,7 @@ export default function Navbar() {
               <Link
                 to="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block mt-4 px-3 py-3 text-center text-base font-bold text-white bg-[#C69C2D] rounded-md"
+                className="block mt-4 px-3 py-3 text-center text-base font-bold text-white bg-[#0056B3] rounded-md"
               >
                 Hubungi Kami
               </Link>

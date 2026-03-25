@@ -12,7 +12,7 @@ export default function Gallery() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-4">Dokumentasi Keberangkatan Terkini</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4">Dokumentasi Keberangkatan Terkini</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
             Momen-momen indah dan penuh berkah jamaah CG Tour & Travel saat menjalankan ibadah di Tanah Suci.
           </p>
@@ -20,7 +20,7 @@ export default function Gallery() {
             href="https://www.instagram.com/cgtourtravel/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#C69C2D] font-semibold hover:text-[#A88222] transition-colors"
+            className="inline-flex items-center gap-2 text-[#0056B3] font-semibold hover:text-[#004494] transition-colors"
           >
             <Instagram className="w-5 h-5" />
             Ikuti kami di Instagram
@@ -44,7 +44,7 @@ export default function Gallery() {
                   href={reel.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-2 px-4 bg-[#F8FAFC] hover:bg-gray-100 text-[#1E293B] font-bold rounded-xl transition-colors text-sm"
+                  className="flex items-center justify-center gap-2 w-full py-2 px-4 bg-[#E6F0FA] hover:bg-[#D1E6F7] text-[#003366] font-bold rounded-xl transition-colors text-sm"
                 >
                   Selengkapnya <ExternalLink className="w-4 h-4" />
                 </a>

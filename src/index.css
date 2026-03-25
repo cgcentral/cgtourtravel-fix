@@ -2,12 +2,24 @@
 
 @theme {
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --color-brand-gold: #C69C2D;
-  --color-brand-blue: #1E293B;
+  --color-brand-primary: #0056B3;
+  --color-brand-secondary: #00AEEF;
+  --color-brand-dark: #003366;
+  --color-brand-light: #E6F0FA;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: #F8FAFC;
-  color: var(--color-brand-blue);
+  background-color: #FFFFFF;
+  color: var(--color-brand-dark);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #0056B3 0%, #00AEEF 100%);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0056B3 0%, #00AEEF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -39,8 +39,8 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
         </AnimatePresence>
-        {/* Dark Overlay for shadow effect to focus on text */}
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
       </div>
 
       {/* Content */}
