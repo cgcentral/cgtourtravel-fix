@@ -78,20 +78,23 @@ export default function SimulasiTabunganPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-[#1E293B] mb-2">Target Waktu Keberangkatan (Bulan)</label>
-                <input 
-                  type="range" 
-                  min="3" 
-                  max="36" 
-                  value={durasiBulan}
-                  onChange={(e) => setDurasiBulan(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#C69C2D]" 
-                />
-                <div className="flex justify-between mt-2 font-medium text-[#1E293B]">
-                  <span>3 Bulan</span>
-                  <span className="text-[#C69C2D] font-bold text-lg">{durasiBulan} Bulan</span>
-                  <span>36 Bulan</span>
+                <label className="block text-sm font-bold text-[#1E293B] mb-4">Target Waktu Keberangkatan</label>
+                <div className="grid grid-cols-2 gap-3">
+                  {[3, 4, 6, 12].map((bulan) => (
+                    <button
+                      key={bulan}
+                      onClick={() => setDurasiBulan(bulan)}
+                      className={`py-3 px-4 rounded-xl font-bold transition-all border-2 ${
+                        durasiBulan === bulan 
+                          ? 'bg-[#C69C2D] border-[#C69C2D] text-white shadow-md scale-[1.02]' 
+                          : 'bg-white border-gray-100 text-gray-600 hover:border-[#C69C2D]/30'
+                      }`}
+                    >
+                      {bulan} Bulan
+                    </button>
+                  ))}
                 </div>
+                <p className="text-xs text-gray-500 mt-4">Pilih jangka waktu menabung yang Anda inginkan.</p>
               </div>
             </div>
 

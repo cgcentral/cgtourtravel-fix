@@ -45,24 +45,38 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="lg:col-span-2">
             <h4 className="text-lg font-bold mb-6 text-white">Hubungi Kami</h4>
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-[#C69C2D] shrink-0 mt-1" />
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Jl. Ciputat Raya No.1b, RT.1/RW.8, Pd. Pinang, Kec. Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <MapPin className="w-6 h-6 text-[#C69C2D] shrink-0 mt-1" />
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    Jl. Ciputat Raya No.1b, RT.1/RW.8, Pd. Pinang, Kec. Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310
+                  </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Phone className="w-6 h-6 text-[#C69C2D] shrink-0" />
+                  <p className="text-gray-400 text-sm">
+                    +62 812 3456 7890 (WhatsApp/Telp)
+                  </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Mail className="w-6 h-6 text-[#C69C2D] shrink-0" />
+                  <p className="text-gray-400 text-sm">
+                    cgtourtravel0@gmail.com
+                  </p>
+                </div>
               </div>
-              <div className="flex items-center gap-4">
-                <Phone className="w-6 h-6 text-[#C69C2D] shrink-0" />
-                <p className="text-gray-400 text-sm">
-                  +62 812 3456 7890 (WhatsApp/Telp)
-                </p>
-              </div>
-              <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-[#C69C2D] shrink-0" />
-                <p className="text-gray-400 text-sm">
-                  hello@cgtourtravel.id
-                </p>
+              <div className="rounded-2xl overflow-hidden h-48 shadow-inner border border-white/10">
+                <iframe
+                  src="https://maps.google.com/maps?q=Jl.%20Ciputat%20Raya%20No.1b,%20RT.1/RW.8,%20Pd.%20Pinang,%20Kec.%20Kebayoran%20Lama,%20Kota%20Jakarta%20Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="CG Tour Travel Location"
+                ></iframe>
               </div>
             </div>
           </div>

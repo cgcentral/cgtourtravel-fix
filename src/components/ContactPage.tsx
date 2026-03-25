@@ -59,13 +59,13 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="mailto:hello@cgtourtravel.id" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
+                <a href="mailto:cgtourtravel0@gmail.com" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
                   <div className="bg-[#1E293B]/10 p-3 rounded-xl shrink-0">
                     <Mail className="w-6 h-6 text-[#1E293B]" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-[#1E293B] group-hover:text-[#1E293B] transition-colors">Email</h4>
-                    <p className="text-gray-600 text-sm">hello@cgtourtravel.id (Untuk kerja sama, grup korporasi, atau pengiriman dokumen)</p>
+                    <p className="text-gray-600 text-sm">cgtourtravel0@gmail.com (Untuk kerja sama, grup korporasi, atau pengiriman dokumen)</p>
                   </div>
                 </a>
               </div>

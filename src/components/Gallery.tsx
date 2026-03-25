@@ -1,12 +1,10 @@
-import { Instagram } from 'lucide-react';
+import { Instagram, ExternalLink } from 'lucide-react';
 
-const galleryImages = [
-  'https://picsum.photos/seed/umroh-1/600/600',
-  'https://picsum.photos/seed/umroh-2/600/600',
-  'https://picsum.photos/seed/umroh-3/600/600',
-  'https://picsum.photos/seed/umroh-4/600/600',
-  'https://picsum.photos/seed/umroh-5/600/600',
-  'https://picsum.photos/seed/umroh-6/600/600',
+const instagramReels = [
+  { id: 'DSo6VriE3I6', url: 'https://www.instagram.com/reel/DSo6VriE3I6/' },
+  { id: 'DTP7kNFE1wk', url: 'https://www.instagram.com/reel/DTP7kNFE1wk/' },
+  { id: 'DSoXDQdE-yf', url: 'https://www.instagram.com/reel/DSoXDQdE-yf/' },
+  { id: 'DTfKnPuk5nz', url: 'https://www.instagram.com/reel/DTfKnPuk5nz/' },
 ];
 
 export default function Gallery() {
@@ -19,7 +17,7 @@ export default function Gallery() {
             Momen-momen indah dan penuh berkah jamaah CG Tour & Travel saat menjalankan ibadah di Tanah Suci.
           </p>
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/cgtourtravel/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#C69C2D] font-semibold hover:text-[#A88222] transition-colors"
@@ -29,17 +27,27 @@ export default function Gallery() {
           </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {galleryImages.map((src, index) => (
-            <div key={index} className="aspect-square overflow-hidden rounded-2xl group relative cursor-pointer">
-              <img 
-                src={src} 
-                alt={`Dokumentasi Umroh ${index + 1}`} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Instagram className="w-8 h-8 text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {instagramReels.map((reel, index) => (
+            <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+              <div className="aspect-[9/16] relative">
+                <iframe
+                  src={`https://www.instagram.com/reel/${reel.id}/embed`}
+                  className="absolute inset-0 w-full h-full border-0"
+                  allowFullScreen
+                  scrolling="no"
+                  title={`Instagram Reel ${index + 1}`}
+                ></iframe>
+              </div>
+              <div className="p-4 mt-auto">
+                <a 
+                  href={reel.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-2 px-4 bg-[#F8FAFC] hover:bg-gray-100 text-[#1E293B] font-bold rounded-xl transition-colors text-sm"
+                >
+                  Selengkapnya <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
           ))}
