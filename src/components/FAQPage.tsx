@@ -1,0 +1,29 @@
+import { motion } from 'motion/react';
+import { ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import FAQ from './FAQ';
+import Footer from './Footer';
+
+export default function FAQPage() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="min-h-screen bg-[#F8FAFC] pt-24"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <Link 
+          to="/" 
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C69C2D] transition-colors group"
+        >
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+          Kembali ke Beranda
+        </Link>
+      </div>
+      <FAQ />
+      <Footer />
+    </motion.div>
+  );
+}
