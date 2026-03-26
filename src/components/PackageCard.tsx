@@ -47,36 +47,36 @@ export default function PackageCard({
           {title}
         </h3>
         <p className="text-sm text-gray-500 mb-1">{subtitle}</p>
-        <p className="text-4xl font-bold text-[#C69C2D]">{price}</p>
+        <p className="text-4xl font-bold text-[#dfa828]">{price}</p>
       </div>
 
       {/* Features List */}
       <div className="flex-grow space-y-4 mb-8">
         <div className="flex items-start gap-3">
-          <Clock className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Clock className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <span className="text-gray-700 text-sm">Durasi: {duration}</span>
         </div>
         <div className="flex items-start gap-3">
-          <Calendar className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Calendar className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <span className="text-gray-700 text-sm">Jadwal: {schedule}</span>
         </div>
         <div className="flex items-start gap-3">
-          <Plane className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Plane className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <span className="text-gray-700 text-sm">{flight}</span>
         </div>
         <div className="flex items-start gap-3">
-          <Building2 className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Building2 className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <span className="text-gray-700 text-sm">Mekkah: {mekkahHotel}</span>
         </div>
         <div className="flex items-start gap-3">
-          <Building2 className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Building2 className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <span className="text-gray-700 text-sm">Madinah: {madinahHotel}</span>
         </div>
         <div className="flex items-start gap-3">
-          <Star className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Star className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <div className="flex items-center gap-1 text-sm text-gray-700">
             Kelas Hotel: 
-            <div className="flex text-[#C69C2D] ml-1">
+            <div className="flex text-[#dfa828] ml-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className={`w-4 h-4 ${i < hotelClass ? 'fill-current' : 'text-gray-300'}`} />
               ))}
@@ -84,7 +84,7 @@ export default function PackageCard({
           </div>
         </div>
         <div className="flex items-start gap-3">
-          <Gift className="w-5 h-5 text-[#C69C2D] shrink-0 mt-0.5" />
+          <Gift className="w-5 h-5 text-[#dfa828] shrink-0 mt-0.5" />
           <span className="text-gray-700 text-sm">Free: {freebies}</span>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function PackageCard({
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full bg-[#C69C2D] hover:bg-[#A88222] text-white font-bold py-3.5 px-4 rounded-full flex items-center justify-center gap-2 transition-colors duration-300"
+        className="w-full bg-[#dfa828] hover:bg-[#A88222] text-white font-bold py-3.5 px-4 rounded-full flex items-center justify-center gap-2 transition-colors duration-300"
       >
         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
         Tanya Paket

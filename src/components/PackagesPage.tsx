@@ -16,7 +16,7 @@ export default function PackagesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C69C2D] transition-colors group mb-8"
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#dfa828] transition-colors group mb-8"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           Kembali ke Beranda
@@ -26,7 +26,7 @@ export default function PackagesPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12 mb-16">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">Umroh: Baitullah Tanpa Worries</h1>
-            <h2 className="text-2xl font-semibold text-[#C69C2D] mb-6">Layanan Umroh: Melangkah ke Baitullah dengan Tenang</h2>
+            <h2 className="text-2xl font-semibold text-[#dfa828] mb-6">Layanan Umroh: Melangkah ke Baitullah dengan Tenang</h2>
             <p className="text-xl text-gray-600 italic font-medium max-w-3xl mx-auto">
               "Baitullah Tanpa Worries — Fokus Beribadah, Biar Kami yang Mengurus Sisanya."
             </p>
@@ -45,8 +45,8 @@ export default function PackagesPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <ShieldCheck className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <ShieldCheck className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#1E293B] mb-1">Akreditasi A</h4>
@@ -55,8 +55,8 @@ export default function PackagesPage() {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <Star className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <Star className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#1E293B] mb-1">Jaminan 100% Berangkat</h4>
@@ -65,8 +65,8 @@ export default function PackagesPage() {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <Users className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <Users className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#1E293B] mb-1">Pembimbing Berpengalaman</h4>
@@ -75,8 +75,8 @@ export default function PackagesPage() {
                 </div>
 
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <MapPin className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <MapPin className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#1E293B] mb-1">Akomodasi Pilihan</h4>
@@ -122,20 +122,20 @@ export default function PackagesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h3 className="text-3xl font-bold text-center text-[#1E293B] mb-12">Informasi & Layanan Tambahan</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link to="/paket/tabungan" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#C69C2D] transition-all group">
-            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#C69C2D] transition-colors mb-2">Tabungan Umroh</h4>
+          <Link to="/paket/tabungan" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#dfa828] transition-all group">
+            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#dfa828] transition-colors mb-2">Tabungan Umroh</h4>
             <p className="text-gray-600">Langkah Kecil Menuju Baitullah. Niatkan Sekarang, Berangkat Kemudian.</p>
           </Link>
-          <Link to="/paket/testimoni" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#C69C2D] transition-all group">
-            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#C69C2D] transition-colors mb-2">Testimoni & Galeri</h4>
+          <Link to="/paket/testimoni" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#dfa828] transition-all group">
+            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#dfa828] transition-colors mb-2">Testimoni & Galeri</h4>
             <p className="text-gray-600">Jejak Syukur di Tanah Suci. Karena Setiap Perjalanan Adalah Cerita Tentang Hati.</p>
           </Link>
-          <Link to="/paket/persiapan" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#C69C2D] transition-all group">
-            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#C69C2D] transition-colors mb-2">Persiapan Umroh</h4>
+          <Link to="/paket/persiapan" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#dfa828] transition-all group">
+            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#dfa828] transition-colors mb-2">Persiapan Umroh</h4>
             <p className="text-gray-600">Matangkan Niat, Sempurnakan Ikhtiar. Berangkat dengan Ilmu, Beribadah dengan Khusyuk.</p>
           </Link>
-          <Link to="/paket/simulasi" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#C69C2D] transition-all group">
-            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#C69C2D] transition-colors mb-2">Simulasi Tabungan Umroh</h4>
+          <Link to="/paket/simulasi" className="block p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#dfa828] transition-all group">
+            <h4 className="text-2xl font-bold text-[#1E293B] group-hover:text-[#dfa828] transition-colors mb-2">Simulasi Tabungan Umroh</h4>
             <p className="text-gray-600">Hitung estimasi tabungan Anda untuk merencanakan keberangkatan dengan lebih matang.</p>
           </Link>
         </div>

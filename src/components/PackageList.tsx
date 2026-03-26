@@ -18,7 +18,7 @@ const packages = [
     title: (
       <>
         Umroh Mister Catur
-        <span className="block text-lg text-[#C69C2D] italic mt-1 font-semibold">Coming Soon</span>
+        <span className="block text-lg text-[#dfa828] italic mt-1 font-semibold">Coming Soon</span>
       </>
     ),
     price: "Rp 30 Jutaan",
@@ -58,18 +58,18 @@ export default function PackageList() {
 
         {/* Filter Section (Simplified for UI) */}
         <div className="bg-white p-4 rounded-2xl shadow-sm mb-12 flex flex-col md:flex-row gap-4 justify-center items-center max-w-4xl mx-auto border border-gray-100">
-          <select className="w-full md:w-auto px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-[#C69C2D] text-gray-600">
+          <select className="w-full md:w-auto px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-[#dfa828] text-gray-600">
             <option>Bulan Keberangkatan</option>
             <option>Agustus 2026</option>
             <option>September 2026</option>
           </select>
-          <select className="w-full md:w-auto px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-[#C69C2D] text-gray-600">
+          <select className="w-full md:w-auto px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-[#dfa828] text-gray-600">
             <option>Tipe Paket</option>
             <option>Reguler</option>
             <option>Plus</option>
             <option>VIP</option>
           </select>
-          <button className="w-full md:w-auto bg-[#C69C2D] text-white px-8 py-2 rounded-lg hover:bg-[#A88222] transition-colors">
+          <button className="w-full md:w-auto bg-[#dfa828] text-white px-8 py-2 rounded-lg hover:bg-[#A88222] transition-colors">
             Cari Paket
           </button>
         </div>

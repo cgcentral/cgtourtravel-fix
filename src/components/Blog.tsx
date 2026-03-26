@@ -61,7 +61,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-[#1E293B] mb-3 leading-snug">
-                  <a href={article.link} className="hover:text-[#C69C2D] transition-colors">
+                  <a href={article.link} className="hover:text-[#dfa828] transition-colors">
                     {article.title}
                   </a>
                 </h3>
@@ -70,7 +70,7 @@ export default function Blog() {
                 </p>
                 <a 
                   href={article.link} 
-                  className="inline-flex items-center gap-2 text-[#C69C2D] font-semibold hover:text-[#A88222] transition-colors mt-auto"
+                  className="inline-flex items-center gap-2 text-[#dfa828] font-semibold hover:text-[#A88222] transition-colors mt-auto"
                 >
                   Baca Selengkapnya
                   <ArrowRight className="w-4 h-4" />

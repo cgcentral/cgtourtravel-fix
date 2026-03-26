@@ -15,7 +15,7 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C69C2D] transition-colors mb-8 group"
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#dfa828] transition-colors mb-8 group"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           Kembali ke Beranda
@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">Tentang Kami</h1>
-            <h2 className="text-2xl font-semibold text-[#C69C2D] mb-6">CG Tour & Travel</h2>
+            <h2 className="text-2xl font-semibold text-[#dfa828] mb-6">CG Tour & Travel</h2>
             <p className="text-xl text-gray-600 italic font-medium">
               "Menjelajah Dunia dengan Profesionalitas, Pulang dengan Cerita Hangat."
             </p>
@@ -43,8 +43,8 @@ export default function AboutPage() {
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <ShieldCheck className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <ShieldCheck className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-[#1E293B] mb-2">Legitimasi & Standar Tertinggi</h4>
@@ -53,8 +53,8 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <Star className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <Star className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-[#1E293B] mb-2">Profesionalitas Tanpa Batas</h4>
@@ -63,8 +63,8 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                    <HeartHandshake className="w-6 h-6 text-[#C69C2D]" />
+                  <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                    <HeartHandshake className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-[#1E293B] mb-2">Keramahan yang Berkesan</h4>

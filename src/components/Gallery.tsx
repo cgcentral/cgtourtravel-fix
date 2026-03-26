@@ -20,7 +20,7 @@ export default function Gallery() {
             href="https://www.instagram.com/cgtourtravel/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#C69C2D] font-semibold hover:text-[#A88222] transition-colors"
+            className="inline-flex items-center gap-2 text-[#dfa828] font-semibold hover:text-[#A88222] transition-colors"
           >
             <Instagram className="w-5 h-5" />
             Ikuti kami di Instagram

@@ -18,13 +18,13 @@ export default function Footer() {
               Biro perjalanan Umroh & Haji Plus resmi dan terpercaya. Berkomitmen memberikan pelayanan terbaik untuk kenyamanan ibadah Anda di Tanah Suci.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#C69C2D] transition-colors">
+              <a href="#" className="text-gray-300 hover:text-[#dfa828] transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#C69C2D] transition-colors">
+              <a href="#" className="text-gray-300 hover:text-[#dfa828] transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#C69C2D] transition-colors">
+              <a href="#" className="text-gray-300 hover:text-[#dfa828] transition-colors">
                 <Youtube className="w-6 h-6" />
               </a>
             </div>
@@ -34,11 +34,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Tautan Cepat</h4>
             <ul className="space-y-4">
-              <li><Link to="/" className="text-gray-300 hover:text-[#C69C2D] transition-colors">Beranda</Link></li>
-              <li><Link to="/paket" className="text-gray-300 hover:text-[#C69C2D] transition-colors">Paket Umroh</Link></li>
-              <li><Link to="/about" className="text-gray-300 hover:text-[#C69C2D] transition-colors">Tentang Kami</Link></li>
-              <li><Link to="/blog" className="text-gray-300 hover:text-[#C69C2D] transition-colors">Blog & Edukasi</Link></li>
-              <li><Link to="/faq" className="text-gray-300 hover:text-[#C69C2D] transition-colors">FAQ</Link></li>
+              <li><Link to="/" className="text-gray-300 hover:text-[#dfa828] transition-colors">Beranda</Link></li>
+              <li><Link to="/paket" className="text-gray-300 hover:text-[#dfa828] transition-colors">Paket Umroh</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-[#dfa828] transition-colors">Tentang Kami</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-[#dfa828] transition-colors">Blog & Edukasi</Link></li>
+              <li><Link to="/faq" className="text-gray-300 hover:text-[#dfa828] transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
@@ -48,19 +48,19 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-[#C69C2D] shrink-0 mt-1" />
+                  <MapPin className="w-6 h-6 text-[#dfa828] shrink-0 mt-1" />
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Jl. Ciputat Raya No.1b, RT.1/RW.8, Pd. Pinang, Kec. Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Phone className="w-6 h-6 text-[#C69C2D] shrink-0" />
+                  <Phone className="w-6 h-6 text-[#dfa828] shrink-0" />
                   <p className="text-gray-300 text-sm">
                     +62 812 3456 7890 (WhatsApp/Telp)
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Mail className="w-6 h-6 text-[#C69C2D] shrink-0" />
+                  <Mail className="w-6 h-6 text-[#dfa828] shrink-0" />
                   <p className="text-gray-300 text-sm">
                     cgtourtravel0@gmail.com
                   </p>

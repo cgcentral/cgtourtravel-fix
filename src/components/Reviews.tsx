@@ -6,7 +6,7 @@ const reviews = [
     date: "2 Bulan yang lalu",
     text: "Alhamdulillah perjalanan umroh bersama CG Tour sangat berkesan. Muthawif sangat sabar membimbing kami yang sudah sepuh. Hotel dekat dengan masjid, makanan juga cocok di lidah.",
     rating: 5,
-    avatar: "https://ui-avatars.com/api/?name=Ahmad+Siti&background=C69C2D&color=fff"
+    avatar: "https://ui-avatars.com/api/?name=Ahmad+Siti&background=dfa828&color=fff"
   },
   {
     name: "Keluarga Bapak Budi",
@@ -20,7 +20,7 @@ const reviews = [
     date: "1 Tahun yang lalu",
     text: "Sangat direkomendasikan untuk yang baru pertama kali umroh. Bimbingan manasiknya jelas, dan selama di sana kita benar-benar diurus dengan baik. Terima kasih CG Tour.",
     rating: 5,
-    avatar: "https://ui-avatars.com/api/?name=Ibu+Nisa&background=C69C2D&color=fff"
+    avatar: "https://ui-avatars.com/api/?name=Ibu+Nisa&background=dfa828&color=fff"
   }
 ];
 
@@ -35,7 +35,7 @@ export default function Reviews() {
           </p>
           <div className="mt-6 flex items-center justify-center gap-2">
             <span className="text-xl font-bold text-[#1E293B]">4.9</span>
-            <div className="flex text-[#C69C2D]">
+            <div className="flex text-[#dfa828]">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-current" />
               ))}
@@ -59,7 +59,7 @@ export default function Reviews() {
                   <p className="text-sm text-gray-500">{review.date}</p>
                 </div>
               </div>
-              <div className="flex text-[#C69C2D] mb-4">
+              <div className="flex text-[#dfa828] mb-4">
                 {[...Array(review.rating)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-current" />
                 ))}

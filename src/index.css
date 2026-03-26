@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --color-brand-primary: #C69C2D;
+  --color-brand-primary: #dfa828;
   --color-brand-secondary: #A88222;
   --color-brand-dark: #1E293B;
   --color-brand-light: #F8FAFC;
@@ -15,11 +15,11 @@ body {
 }
 
 .bg-gradient-brand {
-  background: linear-gradient(135deg, #C69C2D 0%, #A88222 100%);
+  background: linear-gradient(135deg, #dfa828 0%, #A88222 100%);
 }
 
 .text-gradient-brand {
-  background: linear-gradient(135deg, #C69C2D 0%, #A88222 100%);
+  background: linear-gradient(135deg, #dfa828 0%, #A88222 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

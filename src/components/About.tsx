@@ -17,8 +17,8 @@ export default function About() {
             </div>
             <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
               <div className="flex items-center gap-4">
-                <div className="bg-[#C69C2D]/10 p-4 rounded-full">
-                  <Users className="w-8 h-8 text-[#C69C2D]" />
+                <div className="bg-[#dfa828]/10 p-4 rounded-full">
+                  <Users className="w-8 h-8 text-[#dfa828]" />
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-[#1E293B]">10.000+</p>
@@ -40,8 +40,8 @@ export default function About() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                  <ShieldCheck className="w-6 h-6 text-[#C69C2D]" />
+                <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                  <ShieldCheck className="w-6 h-6 text-[#dfa828]" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-[#1E293B] mb-2">Amanah & Terpercaya</h4>
@@ -49,8 +49,8 @@ export default function About() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
-                  <HeartHandshake className="w-6 h-6 text-[#C69C2D]" />
+                <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
+                  <HeartHandshake className="w-6 h-6 text-[#dfa828]" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-[#1E293B] mb-2">Pelayanan Personal</h4>
