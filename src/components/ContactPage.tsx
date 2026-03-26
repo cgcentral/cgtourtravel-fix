@@ -15,15 +15,15 @@ export default function ContactPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#0056B3] transition-colors mb-8 group"
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C69C2D] transition-colors mb-8 group"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           Kembali ke Beranda
         </Link>
 
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4">Hubungi Kami</h1>
-          <p className="text-xl text-[#0056B3] italic font-medium mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">Hubungi Kami</h1>
+          <p className="text-xl text-[#C69C2D] italic font-medium mb-6">
             "Satu Langkah Lebih Dekat Menuju Baitullah. Kami Siap Mendengar."
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
@@ -35,7 +35,7 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="space-y-12">
             <div>
-              <h2 className="text-2xl font-bold text-[#003366] mb-6">Saluran Komunikasi Cepat (Fast Response)</h2>
+              <h2 className="text-2xl font-bold text-[#1E293B] mb-6">Saluran Komunikasi Cepat (Fast Response)</h2>
               <p className="text-gray-600 mb-6">Pilih cara yang paling nyaman bagi Anda untuk terhubung dengan kami:</p>
               
               <div className="space-y-6">
@@ -44,27 +44,27 @@ export default function ContactPage() {
                     <MessageCircle className="w-6 h-6 text-[#25D366]" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#003366] group-hover:text-[#25D366] transition-colors">WhatsApp Chat</h4>
+                    <h4 className="text-lg font-bold text-[#1E293B] group-hover:text-[#25D366] transition-colors">WhatsApp Chat</h4>
                     <p className="text-gray-600 text-sm">Respons cepat untuk tanya jawab paket & pendaftaran</p>
                   </div>
                 </a>
 
                 <a href="tel:02100000000" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                  <div className="bg-[#0056B3]/10 p-3 rounded-xl shrink-0">
-                    <Phone className="w-6 h-6 text-[#0056B3]" />
+                  <div className="bg-[#C69C2D]/10 p-3 rounded-xl shrink-0">
+                    <Phone className="w-6 h-6 text-[#C69C2D]" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#003366] group-hover:text-[#0056B3] transition-colors">Telepon Kantor</h4>
+                    <h4 className="text-lg font-bold text-[#1E293B] group-hover:text-[#C69C2D] transition-colors">Telepon Kantor</h4>
                     <p className="text-gray-600 text-sm">(021) XXXX-XXXX (Layanan suara untuk konsultasi mendalam)</p>
                   </div>
                 </a>
 
                 <a href="mailto:cgtourtravel0@gmail.com" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                  <div className="bg-[#003366]/10 p-3 rounded-xl shrink-0">
-                    <Mail className="w-6 h-6 text-[#003366]" />
+                  <div className="bg-[#1E293B]/10 p-3 rounded-xl shrink-0">
+                    <Mail className="w-6 h-6 text-[#1E293B]" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#003366] group-hover:text-[#003366] transition-colors">Email</h4>
+                    <h4 className="text-lg font-bold text-[#1E293B] group-hover:text-[#1E293B] transition-colors">Email</h4>
                     <p className="text-gray-600 text-sm">cgtourtravel0@gmail.com (Untuk kerja sama, grup korporasi, atau pengiriman dokumen)</p>
                   </div>
                 </a>
@@ -72,21 +72,21 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-[#003366] mb-6">Kunjungi Kantor Kami (Jakarta Selatan)</h2>
+              <h2 className="text-2xl font-bold text-[#1E293B] mb-6">Kunjungi Kantor Kami (Jakarta Selatan)</h2>
               <p className="text-gray-600 mb-6">
                 Ingin berkonsultasi langsung sambil menikmati secangkir kopi? Pintu kami selalu terbuka untuk Anda. Nikmati suasana kantor yang nyaman dan representatif di jantung Jakarta Selatan.
               </p>
               
               <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-4">
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-[#0056B3] shrink-0 mt-1" />
+                  <MapPin className="w-6 h-6 text-[#C69C2D] shrink-0 mt-1" />
                   <p className="text-gray-600">
                     <strong>Alamat Kantor Pusat:</strong><br />
                     Jl. Ciputat Raya No.1b, RT.1/RW.8, Pd. Pinang, Kec. Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310
                   </p>
                 </div>
                 <div className="pt-4 border-t border-gray-100">
-                  <h4 className="font-bold text-[#003366] mb-2">Jam Operasional:</h4>
+                  <h4 className="font-bold text-[#1E293B] mb-2">Jam Operasional:</h4>
                   <ul className="text-gray-600 space-y-1 text-sm">
                     <li>Senin - Jumat: 08.00 - 17.00 WIB</li>
                     <li>Sabtu: 09.00 - 14.00 WIB</li>
@@ -100,7 +100,7 @@ export default function ContactPage() {
           {/* Form & Map */}
           <div className="space-y-12">
             <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-              <h2 className="text-2xl font-bold text-[#003366] mb-4">Formulir Konsultasi Online</h2>
+              <h2 className="text-2xl font-bold text-[#1E293B] mb-4">Formulir Konsultasi Online</h2>
               <p className="text-gray-600 mb-8 text-sm">
                 Malas mengetik di WhatsApp? Isi formulir singkat di bawah ini, dan konsultan travel kami akan menghubungi Anda dalam waktu kurang dari 24 jam.
               </p>
@@ -108,15 +108,15 @@ export default function ContactPage() {
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0056B3] focus:border-transparent outline-none transition-all" placeholder="Masukkan nama Anda" />
+                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#C69C2D] focus:border-transparent outline-none transition-all" placeholder="Masukkan nama Anda" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nomor WhatsApp</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0056B3] focus:border-transparent outline-none transition-all" placeholder="Contoh: 081234567890" />
+                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#C69C2D] focus:border-transparent outline-none transition-all" placeholder="Contoh: 081234567890" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Pilih Layanan</label>
-                  <select className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0056B3] focus:border-transparent outline-none transition-all text-gray-600">
+                  <select className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#C69C2D] focus:border-transparent outline-none transition-all text-gray-600">
                     <option value="">-- Pilih Layanan --</option>
                     <option value="Paket Umroh">Paket Umroh</option>
                     <option value="Tabungan Umroh">Tabungan Umroh</option>
@@ -125,9 +125,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Pesan/Pertanyaan</label>
-                  <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0056B3] focus:border-transparent outline-none transition-all resize-none" placeholder="Tuliskan pertanyaan Anda di sini..."></textarea>
+                  <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#C69C2D] focus:border-transparent outline-none transition-all resize-none" placeholder="Tuliskan pertanyaan Anda di sini..."></textarea>
                 </div>
-                <button type="submit" className="w-full bg-[#003366] hover:bg-[#0056B3] text-white font-bold py-4 px-8 rounded-xl transition-colors flex items-center justify-center gap-2">
+                <button type="submit" className="w-full bg-[#1E293B] hover:bg-[#C69C2D] text-white font-bold py-4 px-8 rounded-xl transition-colors flex items-center justify-center gap-2">
                   <Send className="w-5 h-5" />
                   Kirim Pertanyaan Saya
                 </button>
@@ -149,7 +149,7 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-xl font-medium text-[#003366] italic">
+          <p className="text-xl font-medium text-[#1E293B] italic">
             "Kepuasan Anda dimulai dari tegur sapa pertama kami. Jangan ragu, setiap niat baik berhak mendapatkan jawaban terbaik."
           </p>
         </div>

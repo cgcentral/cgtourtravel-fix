@@ -16,7 +16,7 @@ export default function FAQPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#0056B3] transition-colors group"
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C69C2D] transition-colors group"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           Kembali ke Beranda

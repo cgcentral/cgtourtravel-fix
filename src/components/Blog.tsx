@@ -32,7 +32,7 @@ export default function Blog() {
     <section id="blog" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4">Artikel & Tips Umroh</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-4">Artikel & Tips Umroh</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Bekali diri Anda dengan ilmu dan informasi terkini seputar ibadah umroh dan perjalanan ke Tanah Suci.
           </p>
@@ -60,8 +60,8 @@ export default function Blog() {
                     <span>{article.author}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-[#003366] mb-3 leading-snug">
-                  <a href={article.link} className="hover:text-[#0056B3] transition-colors">
+                <h3 className="text-xl font-bold text-[#1E293B] mb-3 leading-snug">
+                  <a href={article.link} className="hover:text-[#C69C2D] transition-colors">
                     {article.title}
                   </a>
                 </h3>
@@ -70,7 +70,7 @@ export default function Blog() {
                 </p>
                 <a 
                   href={article.link} 
-                  className="inline-flex items-center gap-2 text-[#0056B3] font-semibold hover:text-[#004494] transition-colors mt-auto"
+                  className="inline-flex items-center gap-2 text-[#C69C2D] font-semibold hover:text-[#A88222] transition-colors mt-auto"
                 >
                   Baca Selengkapnya
                   <ArrowRight className="w-4 h-4" />

@@ -31,7 +31,7 @@ export default function SimulasiTabunganPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <Link 
           to="/paket" 
-          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#0056B3] transition-colors mb-8 group"
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C69C2D] transition-colors mb-8 group"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           Kembali ke Paket Umroh
@@ -39,8 +39,8 @@ export default function SimulasiTabunganPage() {
 
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4">Simulasi Tabungan Umroh</h1>
-            <h2 className="text-2xl font-semibold text-[#0056B3] mb-6">Rencanakan Keberangkatan Anda</h2>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">Simulasi Tabungan Umroh</h1>
+            <h2 className="text-2xl font-semibold text-[#C69C2D] mb-6">Rencanakan Keberangkatan Anda</h2>
             <p className="text-xl text-gray-600 italic font-medium">
               "Hitung estimasi tabungan Anda untuk merencanakan keberangkatan dengan lebih matang."
             </p>
@@ -50,35 +50,35 @@ export default function SimulasiTabunganPage() {
             {/* Form Input */}
             <div className="space-y-6">
               <div>
-                <label className="block text-sm font-bold text-[#003366] mb-2">Target Harga Paket Umroh</label>
+                <label className="block text-sm font-bold text-[#1E293B] mb-2">Target Harga Paket Umroh</label>
                 <div className="relative">
                   <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium">Rp</span>
                   <input 
                     type="number" 
                     value={targetDana}
                     onChange={(e) => setTargetDana(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0056B3] focus:border-transparent outline-none transition-all font-medium text-[#003366]" 
+                    className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#C69C2D] focus:border-transparent outline-none transition-all font-medium text-[#1E293B]" 
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-2">Estimasi harga paket yang ingin Anda ikuti.</p>
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-[#003366] mb-2">Setoran Awal (DP)</label>
+                <label className="block text-sm font-bold text-[#1E293B] mb-2">Setoran Awal (DP)</label>
                 <div className="relative">
                   <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium">Rp</span>
                   <input 
                     type="number" 
                     value={danaAwal}
                     onChange={(e) => setDanaAwal(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0056B3] focus:border-transparent outline-none transition-all font-medium text-[#003366]" 
+                    className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#C69C2D] focus:border-transparent outline-none transition-all font-medium text-[#1E293B]" 
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-2">Dana awal yang Anda miliki saat ini untuk membuka tabungan.</p>
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-[#003366] mb-4">Target Waktu Keberangkatan</label>
+                <label className="block text-sm font-bold text-[#1E293B] mb-4">Target Waktu Keberangkatan</label>
                 <div className="grid grid-cols-2 gap-3">
                   {[3, 4, 6, 12].map((bulan) => (
                     <button
@@ -86,8 +86,8 @@ export default function SimulasiTabunganPage() {
                       onClick={() => setDurasiBulan(bulan)}
                       className={`py-3 px-4 rounded-xl font-bold transition-all border-2 ${
                         durasiBulan === bulan 
-                          ? 'bg-[#0056B3] border-[#0056B3] text-white shadow-md scale-[1.02]' 
-                          : 'bg-white border-gray-100 text-gray-600 hover:border-[#0056B3]/30'
+                          ? 'bg-[#C69C2D] border-[#C69C2D] text-white shadow-md scale-[1.02]' 
+                          : 'bg-white border-gray-100 text-gray-600 hover:border-[#C69C2D]/30'
                       }`}
                     >
                       {bulan} Bulan
@@ -99,22 +99,22 @@ export default function SimulasiTabunganPage() {
             </div>
 
             {/* Hasil Simulasi */}
-            <div className="bg-[#E6F0FA] p-8 rounded-3xl border border-gray-100 flex flex-col justify-center relative overflow-hidden">
+            <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col justify-center relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-5">
                 <Calculator className="w-32 h-32" />
               </div>
               
-              <h3 className="text-xl font-bold text-[#003366] mb-6 relative z-10">Hasil Estimasi Tabungan</h3>
+              <h3 className="text-xl font-bold text-[#1E293B] mb-6 relative z-10">Hasil Estimasi Tabungan</h3>
               
               <div className="space-y-6 relative z-10">
                 <div className="flex justify-between items-center border-b border-gray-200 pb-4">
                   <span className="text-gray-600">Total Kekurangan Dana</span>
-                  <span className="font-bold text-[#003366]">{formatRupiah(sisaDana)}</span>
+                  <span className="font-bold text-[#1E293B]">{formatRupiah(sisaDana)}</span>
                 </div>
                 
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                   <span className="block text-gray-600 text-sm mb-2">Estimasi Setoran Per Bulan</span>
-                  <span className="block text-3xl font-bold text-[#0056B3]">{formatRupiah(setoranPerBulan)}</span>
+                  <span className="block text-3xl font-bold text-[#C69C2D]">{formatRupiah(setoranPerBulan)}</span>
                   <span className="block text-xs text-gray-500 mt-2">*Selama {durasiBulan} bulan</span>
                 </div>
               </div>

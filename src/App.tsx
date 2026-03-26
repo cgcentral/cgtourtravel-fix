@@ -28,7 +28,7 @@ import SimulasiTabunganPage from './components/SimulasiTabunganPage';
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#0056B3] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#C69C2D] selection:text-white">
       <Navbar />
       <main>
         <Hero />
