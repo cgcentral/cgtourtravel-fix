@@ -57,6 +57,8 @@ export default function Navbar() {
 
   const paketSubLinks = [
     { name: 'Paket Utama', href: '/paket' },
+    { name: 'Paket Saffa', href: '/paket/saffa' },
+    { name: 'Paket Marwah', href: '/paket/marwah' },
     { name: 'Tabungan Umroh', href: '/paket/tabungan' },
     { name: 'Simulasi Tabungan Umroh', href: '/paket/simulasi' },
     { name: 'Testimoni & Galeri', href: '/paket/testimoni' },

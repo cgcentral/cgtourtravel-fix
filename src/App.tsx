@@ -25,6 +25,7 @@ import TabunganUmrohPage from './components/TabunganUmrohPage';
 import TestimoniGaleriPage from './components/TestimoniGaleriPage';
 import PersiapanUmrohPage from './components/PersiapanUmrohPage';
 import SimulasiTabunganPage from './components/SimulasiTabunganPage';
+import PackageDetailPage from './components/PackageDetailPage';
 
 function HomePage() {
   return (
@@ -53,6 +54,7 @@ function AnimatedRoutes() {
       <Routes location={location}>
         <Route path="/" element={<HomePage />} />
         <Route path="/paket" element={<PackagesPage />} />
+        <Route path="/paket/:slug" element={<PackageDetailPage />} />
         <Route path="/paket/tabungan" element={<TabunganUmrohPage />} />
         <Route path="/paket/testimoni" element={<TestimoniGaleriPage />} />
         <Route path="/paket/persiapan" element={<PersiapanUmrohPage />} />

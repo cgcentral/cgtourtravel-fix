@@ -2,48 +2,46 @@ import PackageCard from './PackageCard';
 
 const packages = [
   {
-    title: "Umroh Akbar Bersama UAS",
-    price: "Rp 30 Jutaan",
+    slug: "saffa",
+    title: "Paket Saffa",
+    price: "Rp 29 Jutaan",
+    description: "Kenyamanan ibadah dengan fasilitas hotel bintang 4 strategis dan pelayanan prima.",
     duration: "9 Hari",
-    schedule: "Menyesuaikan",
+    schedule: "Juli - September 2026",
     flight: "Direct Flight",
-    mekkahHotel: "Hotel Bintang 4/5",
-    madinahHotel: "Hotel Bintang 4/5",
+    mekkahHotel: "Hotel Bintang 4",
+    madinahHotel: "Hotel Bintang 4",
     hotelClass: 4,
     freebies: "Kereta Cepat, Tour Thaif, dll",
-    seatsLeft: 12,
-    whatsappLink: "https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Paket%20Umroh%20Akbar%20Bersama%20UAS"
+    seatsLeft: 15,
+    images: [
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Saffa-1.png",
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Saffa-2.png",
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Saffa-3.png"
+    ],
+    whatsappLink: "https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Paket%20Saffa"
   },
   {
-    title: (
-      <>
-        Umroh Mister Catur
-        <span className="block text-lg text-[#dfa828] italic mt-1 font-semibold">Coming Soon</span>
-      </>
-    ),
-    price: "Rp 30 Jutaan",
+    slug: "marwah",
+    title: "Paket Marwah",
+    price: "Rp 32 Jutaan",
+    description: "Pengalaman ibadah eksklusif dengan fasilitas hotel bintang 5 dan layanan VIP.",
     duration: "9 Hari",
-    schedule: "Menyesuaikan",
+    schedule: "Juli - September 2026",
     flight: "Direct Flight",
-    mekkahHotel: "Hotel Bintang 4/5",
-    madinahHotel: "Hotel Bintang 4/5",
-    hotelClass: 4,
+    mekkahHotel: "Hotel Bintang 5",
+    madinahHotel: "Hotel Bintang 5",
+    hotelClass: 5,
     freebies: "Kereta Cepat, Tour Thaif, dll",
-    seatsLeft: 25,
-    whatsappLink: "https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Paket%20Umroh%20Mister%20Catur"
-  },
-  {
-    title: "Umroh Akbar Akhir Tahun",
-    price: "Rp 30 Jutaan",
-    duration: "9 Hari",
-    schedule: "Menyesuaikan",
-    flight: "Direct Flight",
-    mekkahHotel: "Hotel Bintang 4/5",
-    madinahHotel: "Hotel Bintang 4/5",
-    hotelClass: 4,
-    freebies: "Kereta Cepat, Tour Thaif, dll",
-    seatsLeft: 5,
-    whatsappLink: "https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Paket%20Umroh%20Akbar%20Akhir%20Tahun"
+    seatsLeft: 10,
+    images: [
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Marwah-1.png",
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Marwah-2.png",
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Marwah-3.png",
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Marwah-4.png",
+      "http://cgtourtravel.com/wp-content/uploads/2026/03/Marwah-5.png"
+    ],
+    whatsappLink: "https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20Paket%20Marwah"
   }
 ];
 
@@ -75,7 +73,7 @@ export default function PackageList() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {packages.map((pkg, index) => (
             <PackageCard key={index} {...pkg} />
           ))}
