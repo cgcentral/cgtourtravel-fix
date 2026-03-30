@@ -52,9 +52,9 @@ export default function PackageCard({
   }, [images.length]);
 
   return (
-    <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col h-full border border-gray-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+    <div className="bg-white rounded-3xl flex flex-col h-full border border-gray-200 hover:border-[#dfa828]/50 transition-all duration-300 relative overflow-hidden group">
       {/* Image Slideshow */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-black/90">
+      <div className="relative aspect-[3/4] overflow-hidden bg-white">
         <AnimatePresence mode="wait">
           <motion.img
             key={currentImageIndex}
@@ -68,26 +68,22 @@ export default function PackageCard({
             referrerPolicy="no-referrer"
           />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
         
         {/* Seats Left Badge */}
         {seatsLeft !== undefined && (
-          <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg">
+          <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 z-10">
             <Users className="w-3 h-3" />
             Sisa {seatsLeft} Kursi
           </div>
         )}
-
-        <div className="absolute bottom-4 left-6 right-6">
-          <h3 className="text-xl font-bold text-white leading-tight drop-shadow-md">
-            {title}
-          </h3>
-        </div>
       </div>
 
       <div className="p-8 flex flex-col flex-grow">
         {/* Header */}
         <div className="mb-6">
+          <h3 className="text-2xl font-bold text-[#1E293B] mb-3 leading-tight">
+            {title}
+          </h3>
           <p className="text-sm text-gray-500 mb-1">{subtitle}</p>
           <p className="text-3xl font-bold text-[#dfa828] mb-3">{price}</p>
           {description && <p className="text-sm text-gray-600 line-clamp-2">{description}</p>}
