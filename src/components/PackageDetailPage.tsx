@@ -1,18 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, Calendar, MapPin, Clock, Plane, Building2, Star, CheckCircle2, Phone } from 'lucide-react';
 import Footer from './Footer';
-
-const departureDates = [
-  "13 Juli 2026",
-  "21 Juli 2026",
-  "6 Augustus 2026",
-  "28 Augustus 2026",
-  "8 September 2026",
-  "15 September 2026",
-  "28 September 2026"
-];
 
 const packageData = {
   saffa: {
@@ -20,6 +10,16 @@ const packageData = {
     price: "Rp 29 Jutaan",
     hotelClass: 4,
     description: "Paket Umroh Saffa dirancang untuk jamaah yang mengutamakan nilai terbaik tanpa mengurangi kualitas ibadah. Dengan hotel bintang 4 yang memiliki akses mudah ke Masjidil Haram dan Masjid Nabawi, Anda dapat beribadah dengan lebih khusyuk dan nyaman.",
+    dates: [
+      "13 Juli 2026",
+      "21 Juli 2026",
+      "6 Augustus 2026",
+      "20 Augustus 2026",
+      "8 September 2026",
+      "12 September 2026",
+      "14 September 2026",
+      "28 September 2026"
+    ],
     details: {
       "13 Juli 2026": {
         images: [
@@ -35,6 +35,15 @@ const packageData = {
     price: "Rp 32 Jutaan",
     hotelClass: 5,
     description: "Paket Umroh Marwah adalah pilihan bagi Anda yang menginginkan fasilitas premium dan pelayanan eksklusif. Menghadirkan hotel bintang 5 di pelataran Masjidil Haram, paket ini memberikan kemudahan akses dan kenyamanan maksimal selama perjalanan suci Anda.",
+    dates: [
+      "13 Juli 2026",
+      "21 Juli 2026",
+      "6 Augustus 2026",
+      "20 Augustus 2026",
+      "8 September 2026",
+      "14 September 2026",
+      "28 September 2026"
+    ],
     details: {
       "13 Juli 2026": {
         images: [
@@ -49,9 +58,14 @@ const packageData = {
 
 export default function PackageDetailPage() {
   const { slug } = useParams<{ slug: string }>();
-  const [selectedDate, setSelectedDate] = useState(departureDates[0]);
-  
   const currentPackage = packageData[slug as keyof typeof packageData];
+  const [selectedDate, setSelectedDate] = useState(currentPackage?.dates[0] || "");
+
+  useEffect(() => {
+    if (currentPackage) {
+      setSelectedDate(currentPackage.dates[0]);
+    }
+  }, [slug, currentPackage]);
 
   if (!currentPackage) {
     return (
@@ -91,7 +105,7 @@ export default function PackageDetailPage() {
                 Pilih Jadwal Keberangkatan
               </h2>
               <div className="space-y-3">
-                {departureDates.map((date) => (
+                {currentPackage.dates.map((date) => (
                   <button
                     key={date}
                     onClick={() => setSelectedDate(date)}
