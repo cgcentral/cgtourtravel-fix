@@ -22,11 +22,36 @@ const packageData = {
     ],
     details: {
       "13 Juli 2026": {
-        images: [
-          "http://cgtourtravel.com/wp-content/uploads/2026/03/Paket-Umrah-2.png",
-          "http://cgtourtravel.com/wp-content/uploads/2026/03/Paket-Umrah-4.png"
-        ],
-        description: "Keberangkatan 13 Juli 2026: Nikmati perjalanan ibadah yang terorganisir dengan baik. Paket ini mencakup bimbingan manasik intensif, penerbangan langsung, dan akomodasi hotel bintang 4 yang nyaman. Tim kami akan mendampingi Anda di setiap langkah untuk memastikan pengalaman 'Baitullah Tanpa Worries'."
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-13-Juli-Saffa.png"],
+        description: "Keberangkatan 13 Juli 2026: Nikmati perjalanan ibadah yang terorganisir dengan baik. Paket ini mencakup bimbingan manasik intensif, penerbangan langsung, dan akomodasi hotel bintang 4 yang nyaman."
+      },
+      "21 Juli 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-21-Juli-Saffa.png"],
+        description: "Keberangkatan 21 Juli 2026: Perjalanan spiritual yang nyaman dengan fasilitas terbaik untuk mendukung kekhusyukan ibadah Anda."
+      },
+      "6 Augustus 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-6-Aug-Marwah-1.png"],
+        description: "Keberangkatan 6 Augustus 2026: Fokuslah pada ibadah Anda, biarkan kami mengurus segala kebutuhan logistik dan akomodasi Anda."
+      },
+      "20 Augustus 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-20-Aug-Saffa.png"],
+        description: "Keberangkatan 20 Augustus 2026: Paket umroh ekonomis namun tetap mengutamakan kenyamanan dan kedekatan akses ke Masjidil Haram."
+      },
+      "8 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-8-Sept-Saffa.png"],
+        description: "Keberangkatan 8 September 2026: Nikmati bimbingan ibadah yang intensif dan pelayanan prima selama di tanah suci."
+      },
+      "12 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-12-September-Saffa.png"],
+        description: "Keberangkatan 12 September 2026: Perjalanan ibadah yang tenang dan terencana dengan dukungan tim profesional kami."
+      },
+      "14 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-14-Sept-Saffa.png"],
+        description: "Keberangkatan 14 September 2026: Fasilitas hotel bintang 4 yang strategis memudahkan Anda untuk beribadah setiap waktu."
+      },
+      "28 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-28-Sept-Saffa.png"],
+        description: "Keberangkatan 28 September 2026: Penutup bulan September dengan perjalanan suci yang penuh berkah dan kenyamanan."
       }
     }
   },
@@ -46,11 +71,32 @@ const packageData = {
     ],
     details: {
       "13 Juli 2026": {
-        images: [
-          "http://cgtourtravel.com/wp-content/uploads/2026/03/Paket-Umrah-3.png",
-          "http://cgtourtravel.com/wp-content/uploads/2026/03/Paket-Umrah-4.png"
-        ],
-        description: "Keberangkatan 13 Juli 2026: Rasakan kemewahan beribadah dengan Paket Marwah. Fasilitas hotel bintang 5 terbaik, layanan VIP, dan pendampingan mutawwif yang sangat berpengalaman. Fokuslah sepenuhnya pada ibadah Anda, sementara kami menangani semua detail logistik dengan standar tertinggi."
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-13-Juli-Marwah.png"],
+        description: "Keberangkatan 13 Juli 2026: Rasakan kemewahan beribadah dengan Paket Marwah. Fasilitas hotel bintang 5 terbaik dan layanan VIP."
+      },
+      "21 Juli 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-21-Juli-Marwah.png"],
+        description: "Keberangkatan 21 Juli 2026: Pelayanan eksklusif dan akomodasi premium di jantung kota suci Mekkah dan Madinah."
+      },
+      "6 Augustus 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-6-Aug-Marwah.png"],
+        description: "Keberangkatan 6 Augustus 2026: Kenyamanan maksimal dengan hotel bintang 5 di pelataran Masjidil Haram."
+      },
+      "20 Augustus 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-20-Aug-Marwah.png"],
+        description: "Keberangkatan 20 Augustus 2026: Ibadah yang khusyuk dengan dukungan fasilitas mewah dan bimbingan mutawwif berpengalaman."
+      },
+      "8 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-8-Sept-Marwah.png"],
+        description: "Keberangkatan 8 September 2026: Nikmati kemudahan akses ibadah dengan akomodasi hotel bintang 5 terbaik."
+      },
+      "14 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-14-Sept-Marwah.png"],
+        description: "Keberangkatan 14 September 2026: Perjalanan spiritual eksklusif dengan standar pelayanan tertinggi untuk kepuasan ibadah Anda."
+      },
+      "28 September 2026": {
+        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-28-Sept-Marwah.png"],
+        description: "Keberangkatan 28 September 2026: Akhiri bulan September dengan umroh premium yang memberikan ketenangan dan kenyamanan luar biasa."
       }
     }
   }
@@ -213,7 +259,7 @@ export default function PackageDetailPage() {
 
                 <div className="mt-12 flex flex-col sm:flex-row gap-4">
                   <a
-                    href={`https://wa.me/6281234567890?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20${currentPackage.title}%20keberangkatan%20${selectedDate}`}
+                    href={`https://wa.me/628132104826?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20${currentPackage.title}%20keberangkatan%20${selectedDate}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 bg-[#dfa828] hover:bg-[#A88222] text-white font-bold py-4 px-8 rounded-full flex items-center justify-center gap-3 transition-all shadow-lg"

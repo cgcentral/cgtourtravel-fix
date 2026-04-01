@@ -39,7 +39,7 @@ export default function ContactPage() {
               <p className="text-gray-600 mb-6">Pilih cara yang paling nyaman bagi Anda untuk terhubung dengan kami:</p>
               
               <div className="space-y-6">
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
+                <a href="https://wa.me/628132104826" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
                   <div className="bg-[#25D366]/10 p-3 rounded-xl shrink-0">
                     <MessageCircle className="w-6 h-6 text-[#25D366]" />
                   </div>
@@ -59,13 +59,13 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="mailto:cgtourtravel0@gmail.com" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
+                <a href="mailto:sales@cgtourtravel.com" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
                   <div className="bg-[#1E293B]/10 p-3 rounded-xl shrink-0">
                     <Mail className="w-6 h-6 text-[#1E293B]" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-[#1E293B] group-hover:text-[#1E293B] transition-colors">Email</h4>
-                    <p className="text-gray-600 text-sm">cgtourtravel0@gmail.com (Untuk kerja sama, grup korporasi, atau pengiriman dokumen)</p>
+                    <p className="text-gray-600 text-sm">sales@cgtourtravel.com (Untuk kerja sama, grup korporasi, atau pengiriman dokumen)</p>
                   </div>
                 </a>
               </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nomor WhatsApp</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#dfa828] focus:border-transparent outline-none transition-all" placeholder="Contoh: 081234567890" />
+                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#dfa828] focus:border-transparent outline-none transition-all" placeholder="Contoh: 08132104826" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Pilih Layanan</label>

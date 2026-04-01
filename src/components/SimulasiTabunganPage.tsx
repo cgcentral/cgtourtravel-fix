@@ -121,7 +121,7 @@ export default function SimulasiTabunganPage() {
 
               <div className="mt-8 relative z-10">
                 <a 
-                  href={`https://wa.me/6281234567890?text=Halo%20CG%20Tour%20Travel,%20saya%20tertarik%20dengan%20program%20Tabungan%20Umroh.%20Target%20paket%20${formatRupiah(targetDana)},%20DP%20${formatRupiah(danaAwal)},%20rencana%20menabung%20${durasiBulan}%20bulan.%20Mohon%20infonya.`}
+                  href={`https://wa.me/628132104826?text=Halo%20CG%20Tour%20Travel,%20saya%20tertarik%20dengan%20program%20Tabungan%20Umroh.%20Target%20paket%20${formatRupiah(targetDana)},%20DP%20${formatRupiah(danaAwal)},%20rencana%20menabung%20${durasiBulan}%20bulan.%20Mohon%20infonya.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold py-4 px-6 rounded-xl transition-colors shadow-md"

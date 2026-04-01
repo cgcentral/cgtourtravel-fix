@@ -55,10 +55,10 @@ function AnimatedRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/paket" element={<PackagesPage />} />
         <Route path="/paket/:slug" element={<PackageDetailPage />} />
-        <Route path="/paket/tabungan" element={<TabunganUmrohPage />} />
+        <Route path="/tabungan-umroh" element={<TabunganUmrohPage />} />
         <Route path="/paket/testimoni" element={<TestimoniGaleriPage />} />
         <Route path="/paket/persiapan" element={<PersiapanUmrohPage />} />
-        <Route path="/paket/simulasi" element={<SimulasiTabunganPage />} />
+        <Route path="/simulasi-tabungan" element={<SimulasiTabunganPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/faq" element={<FAQPage />} />

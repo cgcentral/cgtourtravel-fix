@@ -7,7 +7,9 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isTabunganOpen, setIsTabunganOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const tabunganRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -23,6 +25,9 @@ export default function Navbar() {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsDropdownOpen(false);
+      }
+      if (tabunganRef.current && !tabunganRef.current.contains(event.target as Node)) {
+        setIsTabunganOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -59,10 +64,13 @@ export default function Navbar() {
     { name: 'Paket Utama', href: '/paket' },
     { name: 'Paket Saffa', href: '/paket/saffa' },
     { name: 'Paket Marwah', href: '/paket/marwah' },
-    { name: 'Tabungan Umroh', href: '/paket/tabungan' },
-    { name: 'Simulasi Tabungan Umroh', href: '/paket/simulasi' },
     { name: 'Testimoni & Galeri', href: '/paket/testimoni' },
     { name: 'Persiapan Umroh', href: '/paket/persiapan' },
+  ];
+
+  const tabunganSubLinks = [
+    { name: 'Tabungan Umroh', href: '/tabungan-umroh' },
+    { name: 'Simulasi Tabungan Umroh', href: '/simulasi-tabungan' },
   ];
 
   return (
@@ -93,7 +101,10 @@ export default function Navbar() {
             {/* Dropdown Paket Umroh */}
             <div className="relative" ref={dropdownRef}>
               <button 
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                onClick={() => {
+                  setIsDropdownOpen(!isDropdownOpen);
+                  setIsTabunganOpen(false);
+                }}
                 className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#dfa828]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
               >
                 Paket Umroh
@@ -114,6 +125,46 @@ export default function Navbar() {
                         key={sublink.name}
                         to={sublink.href}
                         onClick={() => setIsDropdownOpen(false)}
+                        className="flex items-center justify-between px-5 py-3 text-sm font-medium text-slate-700 hover:bg-gray-50 hover:text-[#dfa828] transition-colors group"
+                      >
+                        {sublink.name}
+                        <span className="flex items-center text-xs text-gray-400 group-hover:text-[#dfa828] transition-colors">
+                          Selengkapnya <ArrowRight className="w-3 h-3 ml-1" />
+                        </span>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* Dropdown Tabungan Umroh */}
+            <div className="relative" ref={tabunganRef}>
+              <button 
+                onClick={() => {
+                  setIsTabunganOpen(!isTabunganOpen);
+                  setIsDropdownOpen(false);
+                }}
+                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#dfa828]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+              >
+                Tabungan Umroh
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isTabunganOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {isTabunganOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-4 w-72 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden py-2"
+                  >
+                    {tabunganSubLinks.map((sublink) => (
+                      <Link
+                        key={sublink.name}
+                        to={sublink.href}
+                        onClick={() => setIsTabunganOpen(false)}
                         className="flex items-center justify-between px-5 py-3 text-sm font-medium text-slate-700 hover:bg-gray-50 hover:text-[#dfa828] transition-colors group"
                       >
                         {sublink.name}
@@ -176,6 +227,23 @@ export default function Navbar() {
                 <div className="text-base font-medium text-slate-800 mb-2">Paket Umroh</div>
                 <div className="pl-4 space-y-2 border-l-2 border-gray-100">
                   {paketSubLinks.map((sublink) => (
+                    <Link
+                      key={sublink.name}
+                      to={sublink.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center justify-between py-2 text-sm font-medium text-gray-600 hover:text-[#dfa828]"
+                    >
+                      {sublink.name}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="px-3 py-3">
+                <div className="text-base font-medium text-slate-800 mb-2">Tabungan Umroh</div>
+                <div className="pl-4 space-y-2 border-l-2 border-gray-100">
+                  {tabunganSubLinks.map((sublink) => (
                     <Link
                       key={sublink.name}
                       to={sublink.href}

@@ -56,13 +56,13 @@ export default function Footer() {
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-[#dfa828] shrink-0" />
                   <p className="text-gray-300 text-sm">
-                    +62 812 3456 7890 (WhatsApp/Telp)
+                    +62 813-2104-826 (WhatsApp/Telp)
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-6 h-6 text-[#dfa828] shrink-0" />
                   <p className="text-gray-300 text-sm">
-                    cgtourtravel0@gmail.com
+                    sales@cgtourtravel.com
                   </p>
                 </div>
               </div>
