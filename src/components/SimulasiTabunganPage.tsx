@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Calculator } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import { trackPurchaseEvent } from '../lib/analytics';
 
 export default function SimulasiTabunganPage() {
   const [targetDana, setTargetDana] = useState<number>(30000000);
@@ -124,6 +125,7 @@ export default function SimulasiTabunganPage() {
                   href={`https://wa.me/628132104826?text=Halo%20CG%20Tour%20Travel,%20saya%20tertarik%20dengan%20program%20Tabungan%20Umroh.%20Target%20paket%20${formatRupiah(targetDana)},%20DP%20${formatRupiah(danaAwal)},%20rencana%20menabung%20${durasiBulan}%20bulan.%20Mohon%20infonya.`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackPurchaseEvent('WhatsApp Simulasi Tabungan', formatRupiah(targetDana))}
                   className="block w-full text-center bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold py-4 px-6 rounded-xl transition-colors shadow-md"
                 >
                   Konsultasi via WhatsApp

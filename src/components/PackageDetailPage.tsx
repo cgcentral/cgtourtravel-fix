@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, Calendar, MapPin, Clock, Plane, Building2, Star, CheckCircle2, Phone } from 'lucide-react';
 import Footer from './Footer';
+import { trackPurchaseEvent } from '../lib/analytics';
 
 const packageData = {
   saffa: {
@@ -262,6 +263,7 @@ export default function PackageDetailPage() {
                     href={`https://wa.me/628132104826?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20${currentPackage.title}%20keberangkatan%20${selectedDate}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackPurchaseEvent(`WhatsApp Detail: ${currentPackage.title}`, currentPackage.price)}
                     className="flex-1 bg-[#dfa828] hover:bg-[#A88222] text-white font-bold py-4 px-8 rounded-full flex items-center justify-center gap-3 transition-all shadow-lg"
                   >
                     <Phone className="w-5 h-5" />

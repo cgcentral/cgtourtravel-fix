@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ArrowLeft, MessageCircle, Phone, Mail, MapPin, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import { trackPurchaseEvent } from '../lib/analytics';
 
 export default function ContactPage() {
   return (
@@ -39,7 +40,10 @@ export default function ContactPage() {
               <p className="text-gray-600 mb-6">Pilih cara yang paling nyaman bagi Anda untuk terhubung dengan kami:</p>
               
               <div className="space-y-6">
-                <a href="https://wa.me/628132104826" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
+                <a href="https://wa.me/628132104826" target="_blank" rel="noopener noreferrer" 
+                  onClick={() => trackPurchaseEvent('WhatsApp Contact Page')}
+                  className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group"
+                >
                   <div className="bg-[#25D366]/10 p-3 rounded-xl shrink-0">
                     <MessageCircle className="w-6 h-6 text-[#25D366]" />
                   </div>
