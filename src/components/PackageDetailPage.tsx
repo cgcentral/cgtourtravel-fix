@@ -261,7 +261,9 @@ export default function PackageDetailPage() {
                 <div className="mt-12 flex flex-col sm:flex-row gap-4">
                   <a
                     href={slug === 'saffa' 
-                      ? "https://api.whatsapp.com/send/?phone=6282312313640&text=Halo+saya+tertarik+dengan+Paket+Saffa+#02&type=phone_number&app_absent=0"
+                      ? "https://api.whatsapp.com/send/?phone=6282312313640&text=#2+Halo+saya+tertarik+dengan+Paket+Saffa&type=phone_number&app_absent=0"
+                      : slug === 'marwah'
+                      ? "https://wa.me/6282312313640?text=#02%Halo%20saya%20tertarik%20dengan%20Paket%20Marwah"
                       : `https://wa.me/6282312313640?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20${currentPackage.title}%20keberangkatan%20${selectedDate}`}
                     target="_blank"
                     rel="noopener noreferrer"
