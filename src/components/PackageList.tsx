@@ -19,7 +19,7 @@ const packages = [
       "http://cgtourtravel.com/wp-content/uploads/2026/04/Saf-2.png",
       "http://cgtourtravel.com/wp-content/uploads/2026/04/saf3.png"
     ],
-    whatsappLink: "https://wa.me/6282312313640?text=Halo%20saya%20tertarik%20dengan%20Paket%20Saffa"
+    whatsappLink: "https://api.whatsapp.com/send/?phone=6282312313640&text=Halo+saya+tertarik+dengan+Paket+Saffa+#2&type=phone_number&app_absent=0"
   },
   {
     slug: "marwah",
