@@ -260,7 +260,7 @@ export default function PackageDetailPage() {
 
                 <div className="mt-12 flex flex-col sm:flex-row gap-4">
                   <a
-                    href={`https://wa.me/628132104826?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20${currentPackage.title}%20keberangkatan%20${selectedDate}`}
+                    href={`https://wa.me/6282312313640?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20${currentPackage.title}%20keberangkatan%20${selectedDate}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackPurchaseEvent(`WhatsApp Detail: ${currentPackage.title}`, currentPackage.price)}

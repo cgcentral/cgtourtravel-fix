@@ -30,7 +30,7 @@ export default function WhatsAppFAB() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          href="https://wa.me/628132104826?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20paket%20umroh."
+          href="https://wa.me/6282312313640?text=Halo%20CG%20Tour%20Travel,%20saya%20ingin%20bertanya%20tentang%20paket%20umroh."
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackPurchaseEvent('WhatsApp FAB')}

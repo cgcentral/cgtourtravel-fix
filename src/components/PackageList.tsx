@@ -19,7 +19,7 @@ const packages = [
       "http://cgtourtravel.com/wp-content/uploads/2026/04/Saf-2.png",
       "http://cgtourtravel.com/wp-content/uploads/2026/04/saf3.png"
     ],
-    whatsappLink: "https://wa.me/628132104826?text=Halo%20saya%20tertarik%20dengan%20Paket%20Saffa"
+    whatsappLink: "https://wa.me/6282312313640?text=Halo%20saya%20tertarik%20dengan%20Paket%20Saffa"
   },
   {
     slug: "marwah",
@@ -39,7 +39,7 @@ const packages = [
       "http://cgtourtravel.com/wp-content/uploads/2026/04/mar2.png",
       "http://cgtourtravel.com/wp-content/uploads/2026/04/mar3.png"
     ],
-    whatsappLink: "https://wa.me/628132104826?text=Halo%20saya%20tertarik%20dengan%20Paket%20Marwah"
+    whatsappLink: "https://wa.me/6282312313640?text=Halo%20saya%20tertarik%20dengan%20Paket%20Marwah"
   }
 ];
 

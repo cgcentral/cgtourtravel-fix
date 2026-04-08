@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'motion/react';
 import ScrollToTop from './components/ScrollToTop';
@@ -48,6 +49,14 @@ function HomePage() {
 
 function AnimatedRoutes() {
   const location = useLocation();
+
+  // Track PageView on route change
+  useEffect(() => {
+    if ((window as any).fbq) {
+      (window as any).fbq('track', 'PageView');
+      console.log(`[Analytics] PageView tracked for: ${location.pathname}`);
+    }
+  }, [location]);
   
   return (
     <AnimatePresence mode="wait">

@@ -11,15 +11,30 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
 
   // Facebook Pixel Tracking
   if ((window as any).fbq) {
+    console.log('[Analytics] Facebook Pixel (fbq) found, sending events...');
     try {
+      // Send Purchase event
       (window as any).fbq('track', 'Purchase', {
         content_name: packageName || 'WhatsApp Inquiry',
         value: price ? parseFloat(price.replace(/[^0-9]/g, '')) : 0,
         currency: 'IDR'
       });
+      
+      // Also send Contact and Lead events as they are more reliable for WhatsApp clicks
+      (window as any).fbq('track', 'Contact', {
+        content_name: packageName || 'WhatsApp Inquiry'
+      });
+      
+      (window as any).fbq('track', 'Lead', {
+        content_name: packageName || 'WhatsApp Inquiry'
+      });
+      
+      console.log('[Analytics] Facebook Pixel events (Purchase, Contact, Lead) sent successfully.');
     } catch (e) {
-      console.error('Error tracking Facebook Purchase event:', e);
+      console.error('Error tracking Facebook events:', e);
     }
+  } else {
+    console.warn('[Analytics] Facebook Pixel (fbq) NOT found. Make sure the script is loaded and not blocked by an ad blocker.');
   }
 
   // Google Analytics (gtag.js) Tracking

@@ -40,7 +40,7 @@ export default function ContactPage() {
               <p className="text-gray-600 mb-6">Pilih cara yang paling nyaman bagi Anda untuk terhubung dengan kami:</p>
               
               <div className="space-y-6">
-                <a href="https://wa.me/628132104826" target="_blank" rel="noopener noreferrer" 
+                <a href="https://wa.me/6282312313640" target="_blank" rel="noopener noreferrer" 
                   onClick={() => trackPurchaseEvent('WhatsApp Contact Page')}
                   className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group"
                 >
@@ -116,7 +116,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nomor WhatsApp</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#dfa828] focus:border-transparent outline-none transition-all" placeholder="Contoh: 08132104826" />
+                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#dfa828] focus:border-transparent outline-none transition-all" placeholder="Contoh: 082312313640" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Pilih Layanan</label>
