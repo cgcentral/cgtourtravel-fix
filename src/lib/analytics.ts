@@ -12,15 +12,26 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
   // Ensure dataLayer exists
   (window as any).dataLayer = (window as any).dataLayer || [];
 
-  // GTM DataLayer
-  (window as any).dataLayer.push({
+  const eventData = {
     event: 'CTWA',
     package_name: packageName || 'WhatsApp Inquiry',
     package_price: price || 'N/A',
     timestamp: new Date().toISOString()
-  });
+  };
 
-  console.log('[Analytics] GTM Event "CTWA" pushed to dataLayer');
+  // GTM DataLayer
+  const pushEvent = () => {
+    (window as any).dataLayer.push(eventData);
+    console.log('[Analytics] GTM Event "CTWA" pushed to dataLayer:', eventData);
+  };
+
+  // Push immediately
+  pushEvent();
+
+  // Also try to trigger a GTM refresh if possible
+  if ((window as any).google_tag_manager) {
+    console.log('[Analytics] GTM detected, event should be visible in Tag Assistant');
+  }
 
   // Facebook Pixel Tracking
   if ((window as any).fbq) {
