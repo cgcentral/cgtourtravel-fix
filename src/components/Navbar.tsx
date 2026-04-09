@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import { trackContactEvent } from '../lib/analytics';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -187,6 +188,7 @@ export default function Navbar() {
 
             <Link 
               to="/contact" 
+              onClick={() => trackContactEvent('Navbar Button', 'Hubungi Kami')}
               className={`px-5 py-2 rounded-full font-bold text-sm transition-colors ${isScrolled || location.pathname !== '/' ? 'bg-[#dfa828] text-white hover:bg-[#A88222]' : 'bg-white text-[#1E293B] hover:bg-gray-100'}`}
             >
               Hubungi Kami

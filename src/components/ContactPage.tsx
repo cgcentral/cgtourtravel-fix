@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { ArrowLeft, MessageCircle, Phone, Mail, MapPin, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-import { trackPurchaseEvent } from '../lib/analytics';
+import { trackPurchaseEvent, trackContactEvent } from '../lib/analytics';
 
 export default function ContactPage() {
   return (
@@ -53,7 +53,10 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="tel:02100000000" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
+                <a href="tel:02100000000" 
+                  onClick={() => trackContactEvent('Phone', 'Office Phone')}
+                  className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group"
+                >
                   <div className="bg-[#dfa828]/10 p-3 rounded-xl shrink-0">
                     <Phone className="w-6 h-6 text-[#dfa828]" />
                   </div>
@@ -63,7 +66,10 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="mailto:sales@cgtourtravel.com" className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
+                <a href="mailto:sales@cgtourtravel.com" 
+                  onClick={() => trackContactEvent('Email', 'Sales Email')}
+                  className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group"
+                >
                   <div className="bg-[#1E293B]/10 p-3 rounded-xl shrink-0">
                     <Mail className="w-6 h-6 text-[#1E293B]" />
                   </div>
@@ -109,7 +115,11 @@ export default function ContactPage() {
                 Malas mengetik di WhatsApp? Isi formulir singkat di bawah ini, dan konsultan travel kami akan menghubungi Anda dalam waktu kurang dari 24 jam.
               </p>
               
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={(e) => {
+                e.preventDefault();
+                trackContactEvent('Form Submission', 'Consultation Form');
+                alert('Terima kasih! Pesan Anda telah terkirim. Kami akan menghubungi Anda segera.');
+              }}>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
                   <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#dfa828] focus:border-transparent outline-none transition-all" placeholder="Masukkan nama Anda" />

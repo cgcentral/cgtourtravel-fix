@@ -9,6 +9,16 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
   // Check if we are in a browser environment
   if (typeof window === 'undefined') return;
 
+  // GTM DataLayer
+  if ((window as any).dataLayer) {
+    (window as any).dataLayer.push({
+      event: 'CTWA',
+      package_name: packageName || 'WhatsApp Inquiry',
+      package_price: price || 'N/A',
+      timestamp: new Date().toISOString()
+    });
+  }
+
   // Facebook Pixel Tracking
   if ((window as any).fbq) {
     console.log('[Analytics] Facebook Pixel (fbq) found, sending events...');
@@ -65,5 +75,37 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
     } catch (e) {
       console.error('Error tracking TikTok CompletePayment event:', e);
     }
+  }
+};
+
+export const trackContactEvent = (method: string, details?: string) => {
+  console.log(`[Analytics] Contact event tracked: ${method} - ${details || 'N/A'}`);
+
+  if (typeof window === 'undefined') return;
+
+  // GTM DataLayer
+  if ((window as any).dataLayer) {
+    (window as any).dataLayer.push({
+      event: 'contact',
+      contact_method: method,
+      contact_details: details || 'N/A',
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  // Facebook Pixel
+  if ((window as any).fbq) {
+    (window as any).fbq('track', 'Contact', {
+      content_category: method,
+      content_name: details || 'N/A'
+    });
+  }
+
+  // Google Analytics
+  if ((window as any).gtag) {
+    (window as any).gtag('event', 'contact', {
+      method: method,
+      details: details || 'N/A'
+    });
   }
 };

@@ -1,4 +1,5 @@
 import PackageCard from './PackageCard';
+import { trackContactEvent } from '../lib/analytics';
 
 const packages = [
   {
@@ -68,7 +69,10 @@ export default function PackageList() {
             <option>Paket Saffa</option>
             <option>Paket Marwah</option>
           </select>
-          <button className="w-full md:w-auto bg-[#dfa828] text-white px-8 py-2 rounded-lg hover:bg-[#A88222] transition-colors">
+          <button 
+            onClick={() => trackContactEvent('Search', 'Cari Paket')}
+            className="w-full md:w-auto bg-[#dfa828] text-white px-8 py-2 rounded-lg hover:bg-[#A88222] transition-colors"
+          >
             Cari Paket
           </button>
         </div>
