@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Youtube, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { trackContactEvent } from '../lib/analytics';
 
 export default function Footer() {
   return (
@@ -55,15 +56,23 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-[#dfa828] shrink-0" />
-                  <p className="text-gray-300 text-sm">
+                  <a 
+                    href="tel:+628132104826" 
+                    onClick={() => trackContactEvent('Phone', 'Footer Phone')}
+                    className="text-gray-300 text-sm hover:text-[#dfa828] transition-colors"
+                  >
                     +62 813-2104-826 (WhatsApp/Telp)
-                  </p>
+                  </a>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-6 h-6 text-[#dfa828] shrink-0" />
-                  <p className="text-gray-300 text-sm">
+                  <a 
+                    href="mailto:sales@cgtourtravel.com"
+                    onClick={() => trackContactEvent('Email', 'Footer Email')}
+                    className="text-gray-300 text-sm hover:text-[#dfa828] transition-colors"
+                  >
                     sales@cgtourtravel.com
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className="rounded-2xl overflow-hidden h-48 shadow-inner border border-white/10">

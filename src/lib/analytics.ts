@@ -9,15 +9,18 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
   // Check if we are in a browser environment
   if (typeof window === 'undefined') return;
 
+  // Ensure dataLayer exists
+  (window as any).dataLayer = (window as any).dataLayer || [];
+
   // GTM DataLayer
-  if ((window as any).dataLayer) {
-    (window as any).dataLayer.push({
-      event: 'CTWA',
-      package_name: packageName || 'WhatsApp Inquiry',
-      package_price: price || 'N/A',
-      timestamp: new Date().toISOString()
-    });
-  }
+  (window as any).dataLayer.push({
+    event: 'CTWA',
+    package_name: packageName || 'WhatsApp Inquiry',
+    package_price: price || 'N/A',
+    timestamp: new Date().toISOString()
+  });
+
+  console.log('[Analytics] GTM Event "CTWA" pushed to dataLayer');
 
   // Facebook Pixel Tracking
   if ((window as any).fbq) {
@@ -83,15 +86,18 @@ export const trackContactEvent = (method: string, details?: string) => {
 
   if (typeof window === 'undefined') return;
 
+  // Ensure dataLayer exists
+  (window as any).dataLayer = (window as any).dataLayer || [];
+
   // GTM DataLayer
-  if ((window as any).dataLayer) {
-    (window as any).dataLayer.push({
-      event: 'contact',
-      contact_method: method,
-      contact_details: details || 'N/A',
-      timestamp: new Date().toISOString()
-    });
-  }
+  (window as any).dataLayer.push({
+    event: 'contact',
+    contact_method: method,
+    contact_details: details || 'N/A',
+    timestamp: new Date().toISOString()
+  });
+
+  console.log('[Analytics] GTM Event "contact" pushed to dataLayer');
 
   // Facebook Pixel
   if ((window as any).fbq) {
