@@ -52,9 +52,18 @@ function AnimatedRoutes() {
 
   // Track PageView on route change
   useEffect(() => {
+    // Facebook Pixel
     if ((window as any).fbq) {
       (window as any).fbq('track', 'PageView');
-      console.log(`[Analytics] PageView tracked for: ${location.pathname}`);
+      console.log(`[Analytics] Facebook PageView tracked: ${location.pathname}`);
+    }
+    
+    // Google Analytics (gtag)
+    if ((window as any).gtag) {
+      (window as any).gtag('config', 'G-7J1J0R455H', {
+        page_path: location.pathname,
+      });
+      console.log(`[Analytics] GA4 PageView tracked: ${location.pathname}`);
     }
   }, [location]);
   

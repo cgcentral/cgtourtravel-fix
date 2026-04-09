@@ -21,17 +21,33 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
 
   // GTM DataLayer
   const pushEvent = () => {
-    (window as any).dataLayer.push(eventData);
-    console.log('[Analytics] GTM Event "CTWA" pushed to dataLayer:', eventData);
+    const dl = (window as any).dataLayer;
+    if (dl && typeof dl.push === 'function') {
+      dl.push(eventData);
+      console.log('[Analytics] GTM Event "CTWA" pushed to dataLayer:', eventData);
+    } else {
+      console.error('[Analytics] dataLayer not found or push is not a function');
+    }
   };
+
+  // Google Analytics (gtag.js) Custom Event
+  if ((window as any).gtag) {
+    try {
+      (window as any).gtag('event', 'CTWA', {
+        package_name: packageName || 'WhatsApp Inquiry',
+        package_price: price || 'N/A',
+        event_callback: () => {
+          console.log('[Analytics] gtag CTWA event callback fired');
+        }
+      });
+      console.log('[Analytics] gtag "CTWA" event sent');
+    } catch (e) {
+      console.error('Error tracking gtag CTWA event:', e);
+    }
+  }
 
   // Push immediately
   pushEvent();
-
-  // Also try to trigger a GTM refresh if possible
-  if ((window as any).google_tag_manager) {
-    console.log('[Analytics] GTM detected, event should be visible in Tag Assistant');
-  }
 
   // Facebook Pixel Tracking
   if ((window as any).fbq) {

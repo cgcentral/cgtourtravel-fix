@@ -4,6 +4,30 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      
+      // Debugger: Munculkan log setiap kali dataLayer.push dipanggil
+      (function() {
+        var originalPush = window.dataLayer.push;
+        window.dataLayer.push = function() {
+          console.log('%c[DataLayer Push]', 'background: #222; color: #bada55; padding: 2px 5px; border-radius: 3px;', arguments[0]);
+          return originalPush.apply(window.dataLayer, arguments);
+        };
+      })();
+
+      // Global Listener: Tangkap semua klik WhatsApp secara otomatis
+      document.addEventListener('click', function(e) {
+        var target = e.target.closest('a');
+        if (target && (target.href.includes('wa.me') || target.href.includes('whatsapp.com'))) {
+          var eventData = {
+            event: 'CTWA',
+            click_url: target.href,
+            location: window.location.pathname,
+            method: 'Global Listener'
+          };
+          window.dataLayer.push(eventData);
+          gtag('event', 'CTWA', eventData);
+        }
+      }, true);
     </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
