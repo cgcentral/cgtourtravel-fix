@@ -13,7 +13,7 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
   (window as any).dataLayer = (window as any).dataLayer || [];
 
   const eventData = {
-    event: 'CTWA',
+    event: 'whatsapp_click',
     package_name: packageName || 'WhatsApp Inquiry',
     package_price: price || 'N/A',
     timestamp: new Date().toISOString()
@@ -24,25 +24,19 @@ export const trackPurchaseEvent = (packageName?: string, price?: string) => {
     const dl = (window as any).dataLayer;
     if (dl && typeof dl.push === 'function') {
       dl.push(eventData);
-      console.log('[Analytics] GTM Event "CTWA" pushed to dataLayer:', eventData);
-    } else {
-      console.error('[Analytics] dataLayer not found or push is not a function');
+      console.log('[Analytics] GTM Event "whatsapp_click" pushed to dataLayer:', eventData);
     }
   };
 
   // Google Analytics (gtag.js) Custom Event
   if ((window as any).gtag) {
     try {
-      (window as any).gtag('event', 'CTWA', {
+      (window as any).gtag('event', 'whatsapp_click', {
         package_name: packageName || 'WhatsApp Inquiry',
-        package_price: price || 'N/A',
-        event_callback: () => {
-          console.log('[Analytics] gtag CTWA event callback fired');
-        }
+        package_price: price || 'N/A'
       });
-      console.log('[Analytics] gtag "CTWA" event sent');
     } catch (e) {
-      console.error('Error tracking gtag CTWA event:', e);
+      console.error('Error tracking gtag whatsapp_click event:', e);
     }
   }
 

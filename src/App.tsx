@@ -5,7 +5,7 @@
 
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -30,7 +30,13 @@ import PackageDetailPage from './components/PackageDetailPage';
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#dfa828] selection:text-white">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-white font-sans selection:bg-[#dfa828] selection:text-white"
+    >
       <Navbar />
       <main>
         <Hero />
@@ -43,7 +49,7 @@ function HomePage() {
       </main>
       <Footer />
       <WhatsAppFAB />
-    </div>
+    </motion.div>
   );
 }
 

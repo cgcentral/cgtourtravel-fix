@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden" id="home">
       {/* Background Slideshow */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <AnimatePresence initial={false}>
           <motion.img
             key={currentIndex}
@@ -40,12 +40,11 @@ export default function Hero() {
           />
         </AnimatePresence>
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none"></div>
       </div>
 
       {/* Content */}
-      {/* UPDATE: Mengubah pt-20 menjadi pt-10 agar konten lebih seimbang di tengah */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 max-w-4xl mx-auto pt-10">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 max-w-4xl mx-auto pt-10 pointer-events-auto">
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
