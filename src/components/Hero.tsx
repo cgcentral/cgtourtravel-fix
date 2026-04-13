@@ -3,44 +3,90 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 
 const images = [
-  'http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-5.jpeg',
-  'http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-4.jpeg',
-  'http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-3.jpeg',
-  'http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-2.jpeg',
-  'http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-1.jpeg',
-  'http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12.jpeg'
+  'https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-5.jpeg',
+  'https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-4.jpeg',
+  'https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-3.jpeg',
+  'https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-2.jpeg',
+  'https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-1.jpeg',
+  'https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12.jpeg'
 ];
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setDirection(1);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change every 3 seconds
+    }, 6000); // Change every 6 seconds for better Ken Burns effect
 
     return () => clearInterval(interval);
   }, []);
+
+  const paginate = (newDirection: number) => {
+    setDirection(newDirection);
+    setCurrentIndex((prev) => (prev + newDirection + images.length) % images.length);
+  };
 
   return (
     <section className="relative h-screen w-full overflow-hidden" id="home">
       {/* Background Slideshow */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <AnimatePresence initial={false}>
+        <AnimatePresence initial={false} custom={direction}>
           <motion.img
             key={currentIndex}
             src={images[currentIndex]}
             alt="Umroh Background"
             referrerPolicy="no-referrer"
             className="absolute inset-0 w-full h-full object-cover"
-            initial={{ opacity: 0, scale: 1.05 }}
+            initial={{ opacity: 0, scale: 1.1 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            exit={{ opacity: 0, scale: 1.05 }}
+            transition={{ 
+              opacity: { duration: 2, ease: "easeInOut" },
+              scale: { duration: 8, ease: "linear" }
+            }}
           />
         </AnimatePresence>
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80 z-10 pointer-events-none"></div>
+      </div>
+
+      {/* Navigation Arrows */}
+      <div className="absolute inset-0 z-30 flex items-center justify-between px-4 md:px-8 pointer-events-none">
+        <button
+          onClick={() => paginate(-1)}
+          className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-all pointer-events-auto group"
+        >
+          <svg className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onClick={() => paginate(1)}
+          className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-all pointer-events-auto group"
+        >
+          <svg className="w-6 h-6 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      {/* Navigation Dots */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-3 pointer-events-auto">
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => {
+              setDirection(idx > currentIndex ? 1 : -1);
+              setCurrentIndex(idx);
+            }}
+            className={`h-1.5 rounded-full transition-all duration-500 ${
+              idx === currentIndex ? 'bg-[#dfa828] w-12' : 'bg-white/30 w-6 hover:bg-white/50'
+            }`}
+          />
+        ))}
       </div>
 
       {/* Content */}
@@ -49,7 +95,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          src="http://cgtourtravel.com/wp-content/uploads/2026/02/Gemini_Generated_Image_c2o455c2o455c2o4-removebg-preview.png"
+          src="https://cgtourtravel.com/wp-content/uploads/2026/02/Gemini_Generated_Image_c2o455c2o455c2o4-removebg-preview.png"
           alt="CG Tour Travel Logo"
           // UPDATE: Mengubah mb-8 menjadi -mb-4 (margin negatif) untuk menarik teks ke atas mendekati logo,
           // dan sedikit mengurangi tinggi maksimal logo (lg:h-[24rem]) agar tombol tidak terdorong keluar layar.

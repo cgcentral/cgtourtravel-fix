@@ -83,7 +83,7 @@ export default function Navbar() {
             <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img 
                 className="h-12 w-auto" 
-                src="http://cgtourtravel.com/wp-content/uploads/2026/02/Gemini_Generated_Image_c2o455c2o455c2o4-removebg-preview.png" 
+                src="https://cgtourtravel.com/wp-content/uploads/2026/02/Gemini_Generated_Image_c2o455c2o455c2o4-removebg-preview.png" 
                 alt="CG Tour Travel Logo" 
                 referrerPolicy="no-referrer"
               />

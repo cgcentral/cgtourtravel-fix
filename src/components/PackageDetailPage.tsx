@@ -8,7 +8,7 @@ import { trackPurchaseEvent } from '../lib/analytics';
 const packageData = {
   saffa: {
     title: "Paket Saffa",
-    price: "Rp 29 Jutaan",
+    price: "Rp 31 Jutaan",
     hotelClass: 4,
     description: "Paket Umroh Saffa dirancang untuk jamaah yang mengutamakan nilai terbaik tanpa mengurangi kualitas ibadah. Dengan hotel bintang 4 yang memiliki akses mudah ke Masjidil Haram dan Masjid Nabawi, Anda dapat beribadah dengan lebih khusyuk dan nyaman.",
     dates: [
@@ -23,42 +23,42 @@ const packageData = {
     ],
     details: {
       "13 Juli 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-13-Juli-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-13-Juli-Saffa.png"],
         description: "Keberangkatan 13 Juli 2026: Nikmati perjalanan ibadah yang terorganisir dengan baik. Paket ini mencakup bimbingan manasik intensif, penerbangan langsung, dan akomodasi hotel bintang 4 yang nyaman."
       },
       "21 Juli 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-21-Juli-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-21-Juli-Saffa.png"],
         description: "Keberangkatan 21 Juli 2026: Perjalanan spiritual yang nyaman dengan fasilitas terbaik untuk mendukung kekhusyukan ibadah Anda."
       },
       "6 Augustus 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-6-Aug-Marwah-1.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-6-Aug-Marwah-1.png"],
         description: "Keberangkatan 6 Augustus 2026: Fokuslah pada ibadah Anda, biarkan kami mengurus segala kebutuhan logistik dan akomodasi Anda."
       },
       "20 Augustus 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-20-Aug-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-20-Aug-Saffa.png"],
         description: "Keberangkatan 20 Augustus 2026: Paket umroh ekonomis namun tetap mengutamakan kenyamanan dan kedekatan akses ke Masjidil Haram."
       },
       "8 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-8-Sept-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-8-Sept-Saffa.png"],
         description: "Keberangkatan 8 September 2026: Nikmati bimbingan ibadah yang intensif dan pelayanan prima selama di tanah suci."
       },
       "12 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-12-September-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-12-September-Saffa.png"],
         description: "Keberangkatan 12 September 2026: Perjalanan ibadah yang tenang dan terencana dengan dukungan tim profesional kami."
       },
       "14 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-14-Sept-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-14-Sept-Saffa.png"],
         description: "Keberangkatan 14 September 2026: Fasilitas hotel bintang 4 yang strategis memudahkan Anda untuk beribadah setiap waktu."
       },
       "28 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-28-Sept-Saffa.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-28-Sept-Saffa.png"],
         description: "Keberangkatan 28 September 2026: Penutup bulan September dengan perjalanan suci yang penuh berkah dan kenyamanan."
       }
     }
   },
   marwah: {
     title: "Paket Marwah",
-    price: "Rp 32 Jutaan",
+    price: "Rp 34 Jutaan",
     hotelClass: 5,
     description: "Paket Umroh Marwah adalah pilihan bagi Anda yang menginginkan fasilitas premium dan pelayanan eksklusif. Menghadirkan hotel bintang 5 di pelataran Masjidil Haram, paket ini memberikan kemudahan akses dan kenyamanan maksimal selama perjalanan suci Anda.",
     dates: [
@@ -72,31 +72,31 @@ const packageData = {
     ],
     details: {
       "13 Juli 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-13-Juli-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-13-Juli-Marwah.png"],
         description: "Keberangkatan 13 Juli 2026: Rasakan kemewahan beribadah dengan Paket Marwah. Fasilitas hotel bintang 5 terbaik dan layanan VIP."
       },
       "21 Juli 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-21-Juli-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-21-Juli-Marwah.png"],
         description: "Keberangkatan 21 Juli 2026: Pelayanan eksklusif dan akomodasi premium di jantung kota suci Mekkah dan Madinah."
       },
       "6 Augustus 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-6-Aug-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-6-Aug-Marwah.png"],
         description: "Keberangkatan 6 Augustus 2026: Kenyamanan maksimal dengan hotel bintang 5 di pelataran Masjidil Haram."
       },
       "20 Augustus 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-20-Aug-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-20-Aug-Marwah.png"],
         description: "Keberangkatan 20 Augustus 2026: Ibadah yang khusyuk dengan dukungan fasilitas mewah dan bimbingan mutawwif berpengalaman."
       },
       "8 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-8-Sept-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-8-Sept-Marwah.png"],
         description: "Keberangkatan 8 September 2026: Nikmati kemudahan akses ibadah dengan akomodasi hotel bintang 5 terbaik."
       },
       "14 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-14-Sept-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-14-Sept-Marwah.png"],
         description: "Keberangkatan 14 September 2026: Perjalanan spiritual eksklusif dengan standar pelayanan tertinggi untuk kepuasan ibadah Anda."
       },
       "28 September 2026": {
-        images: ["http://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-28-Sept-Marwah.png"],
+        images: ["https://cgtourtravel.com/wp-content/uploads/2026/04/Paket-Umrah-28-Sept-Marwah.png"],
         description: "Keberangkatan 28 September 2026: Akhiri bulan September dengan umroh premium yang memberikan ketenangan dan kenyamanan luar biasa."
       }
     }

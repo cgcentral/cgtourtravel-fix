@@ -5,10 +5,10 @@ const packages = [
   {
     slug: "saffa",
     title: "Paket Saffa",
-    price: "Rp 29 Jutaan",
+    price: "Rp 31 Jutaan",
     description: "Kenyamanan ibadah dengan fasilitas hotel bintang 4 strategis dan pelayanan prima.",
     duration: "9 Hari",
-    schedule: "Juli - September 2026",
+    schedule: "Juli - Desember 2026",
     flight: "Direct Flight",
     mekkahHotel: "Hotel Bintang 4",
     madinahHotel: "Hotel Bintang 4",
@@ -16,19 +16,23 @@ const packages = [
     freebies: "Kereta Cepat, Tour Thaif, dll",
     seatsLeft: 15,
     images: [
-      "http://cgtourtravel.com/wp-content/uploads/2026/04/saf1.png",
-      "http://cgtourtravel.com/wp-content/uploads/2026/04/Saf-2.png",
-      "http://cgtourtravel.com/wp-content/uploads/2026/04/saf3.png"
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-1.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-2.1.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-2.2.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-2.3.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-3.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-4.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Saffa-5.png"
     ],
     whatsappLink: "https://api.whatsapp.com/send/?phone=6282312313640&text=#2+Halo+saya+tertarik+dengan+Paket+Saffa&type=phone_number&app_absent=0"
   },
   {
     slug: "marwah",
     title: "Paket Marwah",
-    price: "Rp 32 Jutaan",
+    price: "Rp 34 Jutaan",
     description: "Pengalaman ibadah eksklusif dengan fasilitas hotel bintang 5 dan layanan VIP.",
     duration: "9 Hari",
-    schedule: "Juli - September 2026",
+    schedule: "Juli - Desember 2026",
     flight: "Direct Flight",
     mekkahHotel: "Hotel Bintang 5",
     madinahHotel: "Hotel Bintang 5",
@@ -36,9 +40,14 @@ const packages = [
     freebies: "Kereta Cepat, Tour Thaif, dll",
     seatsLeft: 10,
     images: [
-      "http://cgtourtravel.com/wp-content/uploads/2026/04/mar1.png",
-      "http://cgtourtravel.com/wp-content/uploads/2026/04/mar2.png",
-      "http://cgtourtravel.com/wp-content/uploads/2026/04/mar3.png"
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-1.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-2.1.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-2.2.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-2.3.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-3.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-4.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-5.png",
+      "https://cgtourtravel.com/wp-content/uploads/2026/04/Marwah-6.png"
     ],
     whatsappLink: "https://wa.me/6282312313640?text=#02%Halo%20saya%20tertarik%20dengan%20Paket%20Marwah"
   }

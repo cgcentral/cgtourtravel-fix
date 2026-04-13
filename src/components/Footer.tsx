@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-6">
             <img 
-              src="http://cgtourtravel.com/wp-content/uploads/2026/02/Gemini_Generated_Image_c2o455c2o455c2o4-removebg-preview.png" 
+              src="https://cgtourtravel.com/wp-content/uploads/2026/02/Gemini_Generated_Image_c2o455c2o455c2o4-removebg-preview.png" 
               alt="CG Tour Travel Logo" 
               className="h-16 w-auto bg-white/10 p-2 rounded-xl"
               referrerPolicy="no-referrer"

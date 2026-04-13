@@ -86,7 +86,7 @@ export default function TestimoniGaleriPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="group relative overflow-hidden rounded-3xl shadow-sm border border-gray-100 aspect-video bg-gray-200">
-                  <img src="http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-5.jpeg" alt="Manasik" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src="https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-5.jpeg" alt="Manasik" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/80 via-transparent to-transparent flex flex-col justify-end p-6">
                     <h4 className="text-white font-bold text-xl mb-1">Manasik yang Nyaman</h4>
                     <p className="text-gray-200 text-sm">Persiapan ibadah di hotel berbintang Jakarta Selatan sebelum keberangkatan.</p>
@@ -94,7 +94,7 @@ export default function TestimoniGaleriPage() {
                 </div>
 
                 <div className="group relative overflow-hidden rounded-3xl shadow-sm border border-gray-100 aspect-video bg-gray-200">
-                  <img src="http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-2.jpeg" alt="Masjidil Haram" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src="https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-2.jpeg" alt="Masjidil Haram" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/80 via-transparent to-transparent flex flex-col justify-end p-6">
                     <h4 className="text-white font-bold text-xl mb-1">Momen di Masjidil Haram</h4>
                     <p className="text-gray-200 text-sm">Kekhusyukan jamaah dalam balutan kain ihram dan doa-doa yang terpanjat.</p>
@@ -102,7 +102,7 @@ export default function TestimoniGaleriPage() {
                 </div>
 
                 <div className="group relative overflow-hidden rounded-3xl shadow-sm border border-gray-100 aspect-video bg-gray-200">
-                  <img src="http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-4.jpeg" alt="Akomodasi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src="https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-4.jpeg" alt="Akomodasi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/80 via-transparent to-transparent flex flex-col justify-end p-6">
                     <h4 className="text-white font-bold text-xl mb-1">Kenyamanan Akomodasi</h4>
                     <p className="text-gray-200 text-sm">Intip fasilitas hotel dan transportasi bus eksekutif yang kami sediakan.</p>
@@ -110,7 +110,7 @@ export default function TestimoniGaleriPage() {
                 </div>
 
                 <div className="group relative overflow-hidden rounded-3xl shadow-sm border border-gray-100 aspect-video bg-gray-200">
-                  <img src="http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-1.jpeg" alt="Kebersamaan" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src="https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12-1.jpeg" alt="Kebersamaan" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/80 via-transparent to-transparent flex flex-col justify-end p-6">
                     <h4 className="text-white font-bold text-xl mb-1">Kebersamaan Grup</h4>
                     <p className="text-gray-200 text-sm">Keceriaan saat city tour dan ziarah ke tempat-tempat bersejarah di Madinah dan Makkah.</p>

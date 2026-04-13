@@ -9,7 +9,7 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="http://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12.jpeg" 
+                src="https://cgtourtravel.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-25-at-13.38.12.jpeg" 
                 alt="Jamaah Umroh CG Tour Travel" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

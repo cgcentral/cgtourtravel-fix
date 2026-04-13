@@ -41,35 +41,121 @@ export default function PackageCard({
   slug
 }: PackageProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
     if (images.length <= 1) return;
     
     const interval = setInterval(() => {
+      setDirection(1);
       setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const paginate = (newDirection: number) => {
+    setDirection(newDirection);
+    setCurrentImageIndex((prev) => (prev + newDirection + images.length) % images.length);
+  };
+
+  const variants = {
+    enter: {
+      opacity: 0,
+      scale: 1.1,
+      filter: 'blur(10px)'
+    },
+    center: {
+      zIndex: 1,
+      opacity: 1,
+      scale: 1,
+      filter: 'blur(0px)'
+    },
+    exit: {
+      zIndex: 0,
+      opacity: 0,
+      scale: 0.9,
+      filter: 'blur(10px)'
+    }
+  };
+
   return (
     <div className="bg-white rounded-3xl flex flex-col h-full border border-gray-200 hover:border-[#dfa828]/50 transition-all duration-300 relative overflow-hidden group">
       {/* Image Slideshow */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-white">
-        <AnimatePresence mode="wait">
+      <div className="relative aspect-[3/4] overflow-hidden bg-white group/slider">
+        <AnimatePresence initial={false} mode="wait">
           <motion.img
             key={currentImageIndex}
             src={images[currentImageIndex] || "https://picsum.photos/seed/umroh/800/600"}
             alt="Package Image"
             className="absolute inset-0 w-full h-full object-contain"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              duration: 0.8,
+              ease: [0.4, 0, 0.2, 1]
+            }}
             referrerPolicy="no-referrer"
           />
         </AnimatePresence>
+
+        {/* Progress Bar */}
+        {images.length > 1 && (
+          <div className="absolute top-0 left-0 right-0 z-20 flex gap-1 p-2">
+            {images.map((_, idx) => (
+              <div key={idx} className="h-1 flex-1 bg-black/10 rounded-full overflow-hidden">
+                {idx === currentImageIndex && (
+                  <motion.div 
+                    className="h-full bg-[#dfa828]"
+                    initial={{ width: "0%" }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 6, ease: "linear" }}
+                  />
+                )}
+                {idx < currentImageIndex && <div className="h-full w-full bg-[#dfa828]/50" />}
+              </div>
+            ))}
+          </div>
+        )}
         
+        {/* Navigation Arrows */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={() => paginate(-1)}
+              className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white p-2 rounded-full opacity-0 group-hover/slider:opacity-100 transition-opacity duration-300"
+            >
+              <ChevronRight className="w-5 h-5 rotate-180" />
+            </button>
+            <button
+              onClick={() => paginate(1)}
+              className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white p-2 rounded-full opacity-0 group-hover/slider:opacity-100 transition-opacity duration-300"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </>
+        )}
+
+        {/* Navigation Dots */}
+        {images.length > 1 && (
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  setDirection(idx > currentImageIndex ? 1 : -1);
+                  setCurrentImageIndex(idx);
+                }}
+                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                  idx === currentImageIndex ? 'bg-[#dfa828] w-4' : 'bg-white/50 hover:bg-white/80'
+                }`}
+              />
+            ))}
+          </div>
+        )}
+
         {/* Seats Left Badge */}
         {seatsLeft !== undefined && (
           <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 z-10">
