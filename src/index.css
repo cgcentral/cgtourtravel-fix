@@ -8,10 +8,18 @@
   --color-brand-light: #F8FAFC;
 }
 
-body {
+html, body {
   font-family: var(--font-sans);
   background-color: #FFFFFF;
   color: var(--color-brand-dark);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  position: relative;
 }
 
 .bg-gradient-brand {

@@ -2,6 +2,8 @@ import { Instagram, ExternalLink } from 'lucide-react';
 
 const instagramReels = [
   { id: 'DSo6VriE3I6', url: 'https://www.instagram.com/reel/DSo6VriE3I6/' },
+  { id: 'DXDzAPBirRE', url: 'https://www.instagram.com/reel/DXDzAPBirRE/?igsh=MXVkbTJ3a216OGZmcQ==' },
+  { id: 'DXaz6nyggVR', url: 'https://www.instagram.com/reel/DXaz6nyggVR/?igsh=emFpc3BiajFicnc0' },
   { id: 'DTP7kNFE1wk', url: 'https://www.instagram.com/reel/DTP7kNFE1wk/' },
   { id: 'DSoXDQdE-yf', url: 'https://www.instagram.com/reel/DSoXDQdE-yf/' },
   { id: 'DTfKnPuk5nz', url: 'https://www.instagram.com/reel/DTfKnPuk5nz/' },

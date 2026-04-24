@@ -35,7 +35,7 @@ function HomePage() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-white font-sans selection:bg-[#dfa828] selection:text-white"
+      className="min-h-screen min-h-[100dvh] bg-white font-sans selection:bg-[#dfa828] selection:text-white overflow-x-hidden"
     >
       <Navbar />
       <main>

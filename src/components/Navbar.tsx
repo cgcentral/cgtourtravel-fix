@@ -74,8 +74,10 @@ export default function Navbar() {
     { name: 'Simulasi Tabungan Umroh', href: '/simulasi-tabungan' },
   ];
 
+  const isWhiteBg = isScrolled || location.pathname !== '/' || isMobileMenuOpen;
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isWhiteBg ? 'bg-white shadow-md py-3' : 'bg-white md:bg-transparent py-3 md:py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -94,7 +96,7 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8 items-center">
             <Link 
               to="/about" 
-              className={`text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#dfa828]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+              className={`text-sm font-semibold transition-colors ${isWhiteBg ? 'text-slate-800 hover:text-[#dfa828]' : 'text-slate-800 md:text-white hover:text-[#dfa828] md:hover:text-gray-200 drop-shadow-md'}`}
             >
               Tentang Kami
             </Link>
@@ -106,7 +108,7 @@ export default function Navbar() {
                   setIsDropdownOpen(!isDropdownOpen);
                   setIsTabunganOpen(false);
                 }}
-                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#dfa828]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isWhiteBg ? 'text-slate-800 hover:text-[#dfa828]' : 'text-slate-800 md:text-white hover:text-[#dfa828] md:hover:text-gray-200 drop-shadow-md'}`}
               >
                 Paket Umroh
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -146,7 +148,7 @@ export default function Navbar() {
                   setIsTabunganOpen(!isTabunganOpen);
                   setIsDropdownOpen(false);
                 }}
-                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#dfa828]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+                className={`flex items-center gap-1 text-sm font-semibold transition-colors ${isWhiteBg ? 'text-slate-800 hover:text-[#dfa828]' : 'text-slate-800 md:text-white hover:text-[#dfa828] md:hover:text-gray-200 drop-shadow-md'}`}
               >
                 Tabungan Umroh
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isTabunganOpen ? 'rotate-180' : ''}`} />
@@ -181,7 +183,7 @@ export default function Navbar() {
 
             <Link 
               to="/blog" 
-              className={`text-sm font-semibold transition-colors ${isScrolled || location.pathname !== '/' ? 'text-slate-800 hover:text-[#dfa828]' : 'text-white hover:text-gray-200 drop-shadow-md'}`}
+              className={`text-sm font-semibold transition-colors ${isWhiteBg ? 'text-slate-800 hover:text-[#dfa828]' : 'text-slate-800 md:text-white hover:text-[#dfa828] md:hover:text-gray-200 drop-shadow-md'}`}
             >
               Blog
             </Link>
@@ -189,7 +191,7 @@ export default function Navbar() {
             <Link 
               to="/contact" 
               onClick={() => trackContactEvent('Navbar Button', 'Hubungi Kami')}
-              className={`px-5 py-2 rounded-full font-bold text-sm transition-colors ${isScrolled || location.pathname !== '/' ? 'bg-[#dfa828] text-white hover:bg-[#A88222]' : 'bg-white text-[#1E293B] hover:bg-gray-100'}`}
+              className={`px-5 py-2 rounded-full font-bold text-sm transition-colors ${isWhiteBg ? 'bg-[#dfa828] text-white hover:bg-[#A88222]' : 'bg-[#dfa828] md:bg-white text-white md:text-[#1E293B] hover:bg-[#A88222] md:hover:bg-gray-100'}`}
             >
               Hubungi Kami
             </Link>
@@ -199,7 +201,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 rounded-md ${isScrolled || location.pathname !== '/' ? 'text-slate-800' : 'text-white'}`}
+              className={`p-2 rounded-md ${isWhiteBg ? 'text-slate-800' : 'text-slate-800 md:text-white'}`}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

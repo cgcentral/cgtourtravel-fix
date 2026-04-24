@@ -13,27 +13,20 @@ const images = [
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDirection(1);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 6000); // Change every 6 seconds for better Ken Burns effect
 
     return () => clearInterval(interval);
   }, []);
 
-  const paginate = (newDirection: number) => {
-    setDirection(newDirection);
-    setCurrentIndex((prev) => (prev + newDirection + images.length) % images.length);
-  };
-
   return (
-    <section className="relative h-screen w-full overflow-hidden" id="home">
+    <section className="relative h-screen h-[100dvh] w-full overflow-hidden" id="home">
       {/* Background Slideshow */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <AnimatePresence initial={false} custom={direction}>
+        <AnimatePresence initial={false}>
           <motion.img
             key={currentIndex}
             src={images[currentIndex]}
@@ -51,42 +44,6 @@ export default function Hero() {
         </AnimatePresence>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80 z-10 pointer-events-none"></div>
-      </div>
-
-      {/* Navigation Arrows */}
-      <div className="absolute inset-0 z-30 flex items-center justify-between px-4 md:px-8 pointer-events-none">
-        <button
-          onClick={() => paginate(-1)}
-          className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-all pointer-events-auto group"
-        >
-          <svg className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <button
-          onClick={() => paginate(1)}
-          className="w-12 h-12 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-all pointer-events-auto group"
-        >
-          <svg className="w-6 h-6 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-
-      {/* Navigation Dots */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-3 pointer-events-auto">
-        {images.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => {
-              setDirection(idx > currentIndex ? 1 : -1);
-              setCurrentIndex(idx);
-            }}
-            className={`h-1.5 rounded-full transition-all duration-500 ${
-              idx === currentIndex ? 'bg-[#dfa828] w-12' : 'bg-white/30 w-6 hover:bg-white/50'
-            }`}
-          />
-        ))}
       </div>
 
       {/* Content */}

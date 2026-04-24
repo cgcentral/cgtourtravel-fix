@@ -1,4 +1,5 @@
 import { Users, ShieldCheck, HeartHandshake } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -30,12 +31,14 @@ export default function About() {
 
           {/* Content Side */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-6">Membangun Koneksi Spiritual dengan Pelayanan Sepenuh Hati</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-2 uppercase tracking-tighter">CG Tour & Travel</h2>
+            <h3 className="text-2xl font-bold text-[#dfa828] mb-6">Baitullah Tanpa Worries</h3>
+            
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Berdiri sejak tahun 2010, CG Tour & Travel lahir dari niat tulus untuk memfasilitasi tamu-tamu Allah menuju Baitullah. Kami memahami bahwa ibadah Umroh bukan sekadar perjalanan fisik, melainkan perjalanan spiritual yang membutuhkan ketenangan dan kekhusyukan.
+              Berawal dari sebuah tekad Mister Catur di depan Baitullah, CG Tour & Travel lahir bukan sekadar bisnis, melainkan sebuah amal soleh untuk menjadi wasilah bagi ummat menuju rumah Allah.
             </p>
-            <p className="text-gray-600 mb-10 leading-relaxed">
-              Tim kami terdiri dari para profesional yang berdedikasi tinggi, mulai dari muthawif berpengalaman hingga tim operasional yang memastikan setiap detail perjalanan Anda terencana dengan sempurna.
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Kami berkomitmen memberikan pelayanan yang paling amanah dengan prinsip <span className="font-bold text-[#dfa828]">"Baitullah Tanpa Worries"</span>. Kami yang urus segalanya, Anda cukup fokus beribadah dengan khusyuk dan tenang.
             </p>
 
             <div className="space-y-6">
@@ -44,8 +47,8 @@ export default function About() {
                   <ShieldCheck className="w-6 h-6 text-[#dfa828]" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-[#1E293B] mb-2">Amanah & Terpercaya</h4>
-                  <p className="text-gray-600 text-sm">Berizin resmi Kemenag RI, menjamin keamanan dan kepastian keberangkatan setiap jamaah.</p>
+                  <h4 className="text-xl font-bold text-[#1E293B] mb-2">Berawal dari Amal</h4>
+                  <p className="text-gray-600 text-sm">Dimulai dengan memberangkatkan guru ngaji, santri, dan marbot masjid sebagai wujud syukur dan bakti.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -53,10 +56,17 @@ export default function About() {
                   <HeartHandshake className="w-6 h-6 text-[#dfa828]" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-[#1E293B] mb-2">Pelayanan Personal</h4>
-                  <p className="text-gray-600 text-sm">Kami melayani setiap jamaah layaknya keluarga sendiri, memastikan kenyamanan dari pendaftaran hingga kembali ke tanah air.</p>
+                  <h4 className="text-xl font-bold text-[#1E293B] mb-2">Bergerak dengan Amanah</h4>
+                  <p className="text-gray-600 text-sm">Berizin resmi sebagai travel yang amanah, melayani setiap jamaah layaknya saudara dengan penuh personalitas dan respon cepat.</p>
                 </div>
               </div>
+            </div>
+            
+            <div className="mt-10">
+              <Link to="/about" className="text-[#dfa828] font-bold hover:underline inline-flex items-center gap-2">
+                Baca Cerita Lengkap Kami 
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              </Link>
             </div>
           </div>
         </div>

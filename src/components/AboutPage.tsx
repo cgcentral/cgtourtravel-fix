@@ -24,21 +24,39 @@ export default function AboutPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">Tentang Kami</h1>
-            <h2 className="text-2xl font-semibold text-[#dfa828] mb-6">CG Tour & Travel</h2>
-            <p className="text-xl text-gray-600 italic font-medium">
-              "Menjelajah Dunia dengan Profesionalitas, Pulang dengan Cerita Hangat."
-            </p>
+            <h2 className="text-2xl font-semibold text-[#dfa828] mb-2">CG Tour & Travel</h2>
+            <h3 className="text-xl font-bold text-[#1E293B] uppercase tracking-wider mb-8">Baitullah Tanpa Worries</h3>
           </div>
 
-          <div className="space-y-8 text-gray-600 leading-relaxed">
+          <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+            <p className="font-semibold text-gray-800">
+              CG Tour & Travel lahir dari sebuah momen yang mengubah segalanya.
+            </p>
+            
             <p>
-              Lahir di jantung Jakarta Selatan pada tahun 2025, CG Tour & Travel hadir bukan sekadar sebagai agen perjalanan, melainkan sebagai mitra perjalanan yang memahami setiap jengkal kebutuhan Anda. Kami percaya bahwa setiap perjalanan adalah investasi kebahagiaan, dan kami di sini untuk memastikan investasi tersebut memberikan hasil yang tak ternilai.
+              Ketika Mister Catur untuk pertama kalinya menginjakkan kaki di Tanah Suci bersama kedua orang tua dan keluarganya, ada satu tekad yang terpatri di hati: <span className="italic font-medium">"Ya Allah, gunakan diri ini untuk menjadi wasilah agar lebih banyak orang bisa sampai ke rumah-Mu."</span> Azzam itu bukan sekadar doa yang berlalu — melainkan awal dari sebuah perjalanan panjang yang kemudian melahirkan CG Tour & Travel.
+            </p>
+
+            <p>
+              Langkah pertama kami bukan dimulai dari bisnis. CG Tour & Travel bergerak dari amal soleh — memberangkatkan guru ngaji, santri penghafal Al-Qur'an, relawan dakwah, relawan sosial, dan marbot masjid ke Baitullah. Dari pengalaman itulah kami menyaksikan sendiri bagaimana air mata haru mengalir saat mereka yang selama ini mengabdi untuk ummat akhirnya bisa berdiri di hadapan Ka'bah. Momen-momen itu yang membentuk DNA kami: bahwa setiap orang berhak merasakan kedamaian di rumah Allah, dan kami ingin menjadi jembatan untuk mewujudkannya melalui muamalah yang baik dan amanah.
+            </p>
+
+            <p>
+              Hari ini, CG Tour & Travel hadir sebagai mitra perjalanan umroh dan wisata Anda — berbasis di Jakarta Selatan, berizin resmi sebagai Travel Amanah, dan bergerak dengan satu value yang tidak pernah berubah sejak hari pertama: <span className="text-[#dfa828] font-bold">Baitullah Tanpa Worries</span>.
+            </p>
+
+            <p>
+              Artinya sederhana — kami yang urus segalanya. Dari persiapan dokumen, visa, akomodasi, transportasi, bimbingan ibadah yang mendalam, hingga kepulangan dengan selamat. Tim kami hadir secara personal dan responsif di setiap tahap perjalanan, karena bagi kami setiap jamaah bukan klien, melainkan saudara yang sedang kami antarkan pulang ke rumah Allah. Anda dan keluarga cukup fokus pada satu hal saja: beribadah dengan khusyuk, berdoa dengan tenang, dan pulang membawa ketenangan hati.
+            </p>
+
+            <p>
+              Kami mungkin bukan travel terbesar. Tapi kami berkomitmen menjadi yang paling amanah — karena CG Tour & Travel tidak lahir dari ambisi pasar, melainkan dari azzam seorang hamba di depan Baitullah.
             </p>
 
             <div>
-              <h3 className="text-2xl font-bold text-[#1E293B] mb-6 mt-12">Mengapa Memilih Kami?</h3>
-              <p className="mb-6">
-                Dunia travel terus berkembang, begitu juga dengan standar pelayanan kami. CG Tour & Travel dibangun di atas dua pilar utama yang tidak bisa ditawar:
+              <h3 className="text-2xl font-bold text-[#1E293B] mb-6 mt-12 text-center">Mengapa Memilih Kami?</h3>
+              <p className="mb-6 text-center">
+                Dunia travel terus berkembang, begitu juga dengan standar pelayanan kami. Kami membangun CG Tour & Travel di atas tiga pilar utama:
               </p>
               
               <div className="space-y-6">
@@ -47,8 +65,8 @@ export default function AboutPage() {
                     <ShieldCheck className="w-6 h-6 text-[#dfa828]" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#1E293B] mb-2">Legitimasi & Standar Tertinggi</h4>
-                    <p>Kami adalah agen perjalanan resmi dengan Akreditasi A. Ini adalah bukti komitmen kami terhadap regulasi, keamanan, dan kualitas manajemen perjalanan yang mumpuni.</p>
+                    <h4 className="text-lg font-bold text-[#1E293B] mb-2">Travel Amanah & Terpercaya</h4>
+                    <p>Kami adalah Agen Tour & Travel resmi yang amanah. Ini adalah bukti komitmen kami dalam menjaga setiap kepercayaan jamaah dengan bimbingan ibadah yang khusyuk dan kepastian keberangkatan.</p>
                   </div>
                 </div>
 
@@ -74,19 +92,22 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-[#F8FAFC] p-6 rounded-2xl border border-gray-100 my-10 text-center">
-              <p className="text-lg font-medium text-[#1E293B] italic">
-                "Di CG Tour & Travel, misi kami sederhana: Kami bekerja dengan presisi agar Anda bisa berlibur dengan hati yang tenang."
+            <div>
+              <h3 className="text-2xl font-bold text-[#1E293B] mb-4 mt-12">Filosofi Pelayanan Kami</h3>
+              <p className="mb-4">
+                Filosofi kami tertuang dalam tagline <span className="text-[#dfa828] font-bold italic">"Baitullah Tanpa Worries"</span>. Kami memahami bahwa kenyamanan dimulai sejak interaksi pertama. Berbasis di Jakarta Selatan, tim kami siap menyambut Anda dengan senyuman dan solusi perjalanan yang dipersonalisasi.
+              </p>
+              <p>
+                Tidak ada permintaan yang terlalu kecil, dan tidak ada destinasi yang terlalu jauh untuk kita jelajahi bersama. Kami hadir untuk memastikan setiap langkah Anda menuju rumah Allah diliputi ketenangan, karena bagi kami, melayani Anda adalah bagian dari amanah yang kami emban dengan penuh rasa syukur.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-[#1E293B] mb-4">Filosofi Pelayanan Kami</h3>
-              <p className="mb-4">
-                Kami memahami bahwa kenyamanan dimulai sejak interaksi pertama. Berbasis di Jakarta Selatan, tim kami siap menyambut Anda dengan senyuman dan solusi perjalanan yang dipersonalisasi. Tidak ada permintaan yang terlalu kecil, dan tidak ada destinasi yang terlalu jauh untuk kita jelajahi bersama.
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl border border-[#dfa828]/20 my-12 text-center">
+              <p className="text-xl font-bold text-[#1E293B] mb-4 text-balance">
+                Berawal dari amal, bertumbuh dengan amanah, bergerak untuk ummat.
               </p>
-              <p>
-                Siap merencanakan petualangan Anda berikutnya? Mari bicara! Kunjungi kantor kami di Jakarta Selatan atau hubungi konsultan travel kami untuk mulai merancang perjalanan impian Anda.
+              <p className="text-2xl font-black text-[#dfa828]">
+                CG Tour & Travel — Baitullah Tanpa Worries.
               </p>
             </div>
           </div>
