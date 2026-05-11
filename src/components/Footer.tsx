@@ -57,11 +57,13 @@ export default function Footer() {
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-[#dfa828] shrink-0" />
                   <a 
-                    href="tel:+628132104826" 
-                    onClick={() => trackContactEvent('Phone', 'Footer Phone')}
+                    href="https://wa.me/6282312313640" 
+                    onClick={() => trackContactEvent('WhatsApp', 'Footer WhatsApp')}
                     className="text-gray-300 text-sm hover:text-[#dfa828] transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    +62 813-2104-826 (WhatsApp/Telp)
+                    +62 823-1231-3640 (WhatsApp/Telp)
                   </a>
                 </div>
                 <div className="flex items-center gap-4">
